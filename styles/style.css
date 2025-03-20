@@ -1,0 +1,22 @@
+:root {
+    --main-red: #E42D26;
+    --main-blue: #2FBEC2;
+    --main-yellow: #FDC010;
+}
+
+/* IMPORTANT: Please use the variables above when styling your elements */
+
+/* DO NOT CHANGE THE CODE BELOW */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Please code your elements under the coments below to avoid any merge conflicts */
+/* Navigation */
+
+/* Header */
+
+/* Footer */
