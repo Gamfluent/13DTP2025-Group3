@@ -2,6 +2,7 @@
     --main-red: #E42D26;
     --main-blue: #2FBEC2;
     --main-yellow: #FDC010;
+    --background-dark: #232323;
 }
 
 /* IMPORTANT: Please use the variables above when styling your elements */
@@ -16,12 +17,20 @@
 
 /* Please code your elements under the coments below to avoid any merge conflicts */
 /* Navigation */
+
+/* Header */
 nav {
     background-color: black;
     color: white;
 }
 
+#navbar {
+    background-color: var(--background-dark);
+}
 
-/* Header */
+#brand-text {
+    color: var(--main-blue);
+    font-family: 'PhosphatePro', sans-serif;
+}
 
 /* Footer */
