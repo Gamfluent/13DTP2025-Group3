@@ -10,19 +10,27 @@
 </head>
 <body>
     <nav>
-        <nav class="navbar navbar-dark bg-dark"> <!--This is the main navbar and this container will be substitued with the developed header-->
+        <div class="navbar navbar-dark bg-dark"> <!--This is the main navbar and this container will be substitued with the developed header-->
             <div class="container-fluid d-flex justify-content-end"> <!--This is the container of the navbar-->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"> <!--This is the button that will trigger the collapsible content-->
-                <span class="navbar-toggler-icon"></span> <!--This is the icon of the button-->
-              </button>
+                <button href="" type="button" class="btn btn-info d-none d-md-inline me-2">Portal</button>
+                <button href="" type="button" class="btn btn-info d-none d-md-inline me-2">Contact</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"> <!--This is the button that will trigger the collapsible content-->
+                    <span class="navbar-toggler-icon"></span> <!--This is the icon of the button-->
+                </button>
             </div>
-            <div class="collapse justify-content-end" id="navbarToggleExternalContent"> <!--This is the collapsible content of the navbar-->
+            <div class="collapse" id="navbarToggleExternalContent"> <!--This is the collapsible content of the navbar-->
                 <div class="bg-dark p-4"> <!--Container with Collapsed Content inside-->
-                    <h5 class="text-white h4">Collapsed content</h5> 
-                    <span class="text-muted">Toggleable via the navbar brand.</span>
+                    <h5><a href="" class="text-white h4">Home page</a></h5>
+                    <h5><a href="" class="text-white h4">Membership Access</a></h5>
+                    <h5><a href="" class="text-white h4">Membership Details</a></h5>
+                    <h5><a href="" class="text-white h4">Safety</a></h5>
+                    <h5><a href="" class="text-white h4">Additional Info</a></h5>
+                    <h5><a href="" class="text-white h4">Contacts</a></h5>
+                    <button href="" type="button" class="btn btn-info btn-lg d-md-none me-2">Portal</button>
+                    <button href="" type="button" class="btn btn-info btn-lg d-md-none">Contact</button>
                 </div>
             </div>
-        </nav>
+        </div>
     </nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

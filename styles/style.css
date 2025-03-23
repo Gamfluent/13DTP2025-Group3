@@ -21,4 +21,15 @@
 
 /* Header */
 
+/* Navigastion */
+#navbarToggleExternalContent {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* Footer */
