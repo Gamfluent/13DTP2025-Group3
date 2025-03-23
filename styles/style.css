@@ -30,7 +30,15 @@ nav {
 
 #brand-text {
     color: var(--main-blue);
-    font-family: 'PhosphatePro', sans-serif;
+    font-family: 'PhosphateInline', sans-serif;
+}
+
+#brand-text p{
+    letter-spacing: 20px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
 }
 
 /* Footer */
