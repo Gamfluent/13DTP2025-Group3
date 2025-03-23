@@ -37,6 +37,10 @@ nav {
     letter-spacing: 20px;
 }
 
+.navbar-toggler {
+    display: block;
+}
+
 .navbar-toggler-icon {
     filter: invert(100%);
 }
