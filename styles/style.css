@@ -22,22 +22,41 @@
 /* Header */
 
 /* Navigastion */
+.navbar-button { /* Default styles for the hamburger button */
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline */
+    cursor: pointer; /* Add a pointer cursor when hovering over*/
+}
+
 .navbar-hamburger {
-    display: block;
-    width: 45px;
-    height: 6px;
-    border-radius: 4px;
-    background-color: aliceblue;
+    display: block; /* Display the hamburger lines vertically*/
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Styles for the active state */
+.navbar-button.active .navbar-hamburger:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* Rotate the first line */
+}
+
+.navbar-button.active .navbar-hamburger:nth-child(2) {
+    opacity: 0; /* Hide the middle line */
+}
+
+.navbar-button.active .navbar-hamburger:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Rotate the third line */
 }
 
 #navbarToggleExternalContent {
-    position: absolute;
+    position: absolute; /* Position the Dropdown above the content on the homepage */
     top: 100%;
     right: 0%;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /* Remove the underline from the links */
 }
 
 /* Footer */
