@@ -1,9 +1,9 @@
 :root {
     --main-black: #232323;
     --main-white: #F9F9F9;
+    --main-yellow: #FDC010;
     --main-red: #E42D26;
     --main-blue: #2FBEC2;
-    --main-yellow: #FDC010;
 }
 
 /* IMPORTANT: Please use the variables above when styling your elements */
@@ -17,30 +17,49 @@
 
 
 /* Please code your elements under the coments below to avoid any merge conflicts */
+/*Global*/
+.btn {
+    background-color: var(--main-red) !important;
+    border: none !important;
+}
+
 /* Navigation */
-
-/* Header */
-
-/* Navigastion */
+#hamburger-button {
+    background-color: none;
+}
 
 .navbar-hamburger {
     width: 30px;
     height: 3px;
-    background-color: var(--main-white);
     transition: all 0.3s ease; /* Add a smooth transition effect */
 }
 
-/* Styles for the active state */
-.navbar-button.active .navbar-hamburger:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 10px); /* Rotate the first line */
+.navbar-hamburger #line-1 {
+    background-color: var(--main-yellow);
 }
 
-.navbar-button.active .navbar-hamburger:nth-child(2) {
+.navbar-hamburger #line-2 {
+    background-color: var(--main-red);
+}
+
+.navbar-hamburger #line-3 {
+    background-color: var(--main-blue);
+}
+
+/* Styles for the active state */
+.navbar-button.active #line-1 {
+    transform: rotate(45deg) translate(7px, 8.5px); /* Rotate the first line */
+    background-color: var(--main-blue)
+}
+
+.navbar-button.active #line-2 {
     opacity: 0; /* Hide the middle line */
 }
 
-.navbar-button.active .navbar-hamburger:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -10px); /* Rotate the third line */
+.navbar-button.active #line-3 {
+    transform: rotate(-45deg) translate(7px, -8.5px); /* Rotate the third line */
 }
+
+/* Header */
 
 /* Footer */
