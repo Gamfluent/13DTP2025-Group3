@@ -19,13 +19,15 @@
 /* Please code your elements under the coments below to avoid any merge conflicts */
 /*Global*/
 .btn {
-    background-color: var(--main-red) !important;
-    border: none !important;
+    border-color: var(--main-blue) !important;
+    border: 1 !important;
+    border-radius: 1 !important;
+    color: var(--main-blue) !important;
 }
 
 /* Navigation */
-#hamburger-button {
-    background-color: none;
+.navbar-button {
+    border-style: none;
 }
 
 .navbar-hamburger {
@@ -34,22 +36,22 @@
     transition: all 0.3s ease; /* Add a smooth transition effect */
 }
 
-.navbar-hamburger #line-1 {
-    background-color: var(--main-yellow);
+#line-1 {
+    border-color: var(--main-yellow) !important;
 }
 
-.navbar-hamburger #line-2 {
-    background-color: var(--main-red);
+#line-2 {
+    border-color: var(--main-red) !important;
 }
 
-.navbar-hamburger #line-3 {
-    background-color: var(--main-blue);
+#line-3 {
+    border-color: var(--main-blue) !important;
 }
 
 /* Styles for the active state */
 .navbar-button.active #line-1 {
-    transform: rotate(45deg) translate(7px, 8.5px); /* Rotate the first line */
-    background-color: var(--main-blue)
+    transform: rotate(45deg) translate(7.7px, 8px); /* Rotate the first line */
+    border-color: var(--main-blue) !important;
 }
 
 .navbar-button.active #line-2 {
@@ -57,7 +59,7 @@
 }
 
 .navbar-button.active #line-3 {
-    transform: rotate(-45deg) translate(7px, -8.5px); /* Rotate the third line */
+    transform: rotate(-45deg) translate(7.7px, -8px); /* Rotate the third line */
 }
 
 /* Header */
