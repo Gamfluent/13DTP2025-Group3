@@ -19,10 +19,8 @@
 /* Please code your elements under the coments below to avoid any merge conflicts */
 /*Global*/
 .btn {
-    border-color: var(--main-blue) !important;
-    border: 1 !important;
+    background-color: var(--main-blue) !important;
     border-radius: 1 !important;
-    color: var(--main-blue) !important;
 }
 
 /* Navigation */
@@ -37,21 +35,21 @@
 }
 
 #line-1 {
-    border-color: var(--main-yellow) !important;
+    background-color: var(--main-yellow) !important;
 }
 
 #line-2 {
-    border-color: var(--main-red) !important;
+    background-color: var(--main-red) !important;
 }
 
 #line-3 {
-    border-color: var(--main-blue) !important;
+    background-color: var(--main-blue) !important;
 }
 
 /* Styles for the active state */
 .navbar-button.active #line-1 {
     transform: rotate(45deg) translate(7.7px, 8px); /* Rotate the first line */
-    border-color: var(--main-blue) !important;
+    background-color: var(--main-blue) !important;
 }
 
 .navbar-button.active #line-2 {
