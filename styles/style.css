@@ -2,7 +2,8 @@
     --main-red: #E42D26;
     --main-blue: #2FBEC2;
     --main-yellow: #FDC010;
-    --background-dark: #232323;
+    --main-black: #232323;
+    --main-white: #F9F9F9;
 }
 
 /* IMPORTANT: Please use the variables above when styling your elements */
@@ -19,13 +20,15 @@
 /* Navigation */
 
 /* Header */
+
+    /* Header 1 */
 nav {
-    background-color: black;
-    color: white;
+    background-color: var(--main-black);
+    color: var(--main-white);
 }
 
 #navbar {
-    background-color: var(--background-dark);
+    background-color: var(--main-black);
 }
 
 #brand-text {
@@ -43,6 +46,14 @@ nav {
 
 .navbar-toggler-icon {
     filter: invert(100%);
+}
+
+    /* Header 2 */
+#brand-text-2 {
+    color: var(--main-white);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 /* Footer */
