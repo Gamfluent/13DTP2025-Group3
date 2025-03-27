@@ -1,0 +1,65 @@
+:root {
+    --main-black: #232323;
+    --main-white: #F9F9F9;
+    --main-yellow: #FDC010;
+    --main-red: #E42D26;
+    --main-blue: #2FBEC2;
+}
+
+/* IMPORTANT: Please use the variables above when styling your elements */
+
+/* DO NOT CHANGE THE CODE BELOW */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Please code your elements under the coments below to avoid any merge conflicts */
+/*Global*/
+.btn {
+    background-color: var(--main-blue) !important;
+    border-radius: 1 !important;
+}
+
+/* Navigation */
+.navbar-button {
+    border-style: none;
+}
+
+.navbar-hamburger {
+    width: 30px;
+    height: 3px;
+    transition: all 0.3s ease; /* Add a smooth transition effect */
+}
+
+#line-1 {
+    background-color: var(--main-yellow) !important;
+}
+
+#line-2 {
+    background-color: var(--main-red) !important;
+}
+
+#line-3 {
+    background-color: var(--main-blue) !important;
+}
+
+/* Styles for the active state */
+.navbar-button.active #line-1 {
+    transform: rotate(45deg) translate(7.7px, 8px); /* Rotate the first line */
+    background-color: var(--main-blue) !important;
+}
+
+.navbar-button.active #line-2 {
+    opacity: 0; /* Hide the middle line */
+}
+
+.navbar-button.active #line-3 {
+    transform: rotate(-45deg) translate(7.7px, -8px); /* Rotate the third line */
+}
+
+/* Header */
+
+/* Footer */
