@@ -21,7 +21,7 @@
 .btn {
     border-color: var(--main-blue) !important;
     border: 1 !important;
-    border-radius: 1 !important;
+    border-radius: 30px !important;
     color: var(--main-blue) !important;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
