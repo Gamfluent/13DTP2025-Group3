@@ -2,6 +2,8 @@
     --main-red: #E42D26;
     --main-blue: #2FBEC2;
     --main-yellow: #FDC010;
+    --main-black: #232323;
+    --main-white: #F9F9F9;
 }
 
 /* IMPORTANT: Please use the variables above when styling your elements */
@@ -20,6 +22,46 @@
 /* Header */
 
 /* Footer */
-.bg-custom-footer {
-    background-color: #282424;
+
+
+.footer {
+    background-color: var(--main-black); 
+    color: var(--main-white); 
 }
+
+.footer h6 {
+    color: var(--main-white); 
+}
+
+.contact-box {
+    background-color: var(--main-yellow);
+    color: var(--main-white)
+}
+
+.urgent-box {
+    background-color: var(--main-red); 
+    color: var(--main-white); 
+}
+
+.past-emergency-box {
+    background-color: var(--main-blue); 
+    color: var(--main-white); 
+}
+
+.info-box {
+    border-radius: 5px;
+}
+
+.contact-box {
+    border-radius: 5px;
+}
+
+.footer-link {
+    color: var(--main-white); 
+    text-decoration: none; 
+}
+
+.footer-link:hover {
+    color: var(--main-yellow);
+}
+
