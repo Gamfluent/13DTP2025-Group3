@@ -40,10 +40,6 @@ nav {
     letter-spacing: 20px;
 }
 
-.navbar-toggler {
-    display: block;
-}
-
 .navbar-toggler-icon {
     filter: invert(100%);
 }
@@ -51,9 +47,29 @@ nav {
     /* Header 2 */
 #brand-text-2 p {
     color: var(--main-white);
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     font-weight: bold;
     font-size: x-large;
+}
+
+    /* Header 3 */
+#brand-text-3 {
+    color: var(--main-white);
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#brand-text-3 span:nth-child(1){
+    color: var(--main-yellow);
+}
+
+#brand-text-3 span:nth-child(2){
+    color: var(--main-red);
+}
+
+#brand-text-3 span:nth-child(3){
+    color: var(--main-blue);
 }
 
 /* Footer */
