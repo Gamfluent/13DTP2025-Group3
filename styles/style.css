@@ -49,7 +49,7 @@ nav {
 }
 
     /* Header 2 */
-#brand-text-2 {
+#navbar p {
     color: var(--main-white);
     font-family: Arial, sans-serif;
     font-weight: bold;
