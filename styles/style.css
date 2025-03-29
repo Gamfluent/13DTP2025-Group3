@@ -20,11 +20,10 @@
 /*Global*/
 .btn {
     border-color: var(--main-blue) !important;
-    border: 1 !important;
-    border-radius: 1 !important;
+    border-width: 4px !important;
+    font-weight: bold !important;
+    border-radius: 10px !important;
     color: var(--main-blue) !important;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
