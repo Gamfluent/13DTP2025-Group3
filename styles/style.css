@@ -4,7 +4,6 @@
     --main-yellow: #FDC010;
     --main-red: #E42D26;
     --main-blue: #2FBEC2;
-}
 
 /* IMPORTANT: Please use the variables above when styling your elements */
 
@@ -70,5 +69,28 @@
 }
 
 /* Header */
+
+    /* Header 1 */
+nav {
+    background-color: var(--main-black);
+    color: var(--main-white);
+}
+
+#navbar {
+    background-color: var(--main-black);
+}
+
+#brand-text {
+    color: var(--main-white);
+    font-family: 'PhosphateInline', sans-serif;
+}
+
+#brand-text p{
+    letter-spacing: 10px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
 
 /* Footer */
