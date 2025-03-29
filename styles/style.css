@@ -24,7 +24,6 @@
 /* Footer */
 
 
-
 /* Footer */
 footer {
     background-color: var(--main-black); /* Black background */
@@ -33,10 +32,6 @@ footer {
     border-top: 5px solid var(--main-yellow); /* Yellow top border for cartoonish feel */
     border-bottom: 5px solid var(--main-yellow); /* Yellow bottom border */
 }
-
-BOOTSTRAP IMPLEMENTED ?
-
-
 
 /* Footer Headings */
 footer h6 {
@@ -52,35 +47,15 @@ footer h6 {
     color: var(--main-white); /* White text */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    display: flex;
-    align-items: center;
-    gap: 15px;
 }
-
-.contact-box i {
-    font-size: 2rem; /* Icon size */
-    color: var(--main-yellow); /* Yellow icon */
-}
-
 
 /* Emergency Box */
 .urgent-box {
     background-color: var(--main-red); /* Red background */
     color: var(--main-white); /* White text */
-    
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    display: flex;
-    align-items: center;
-    gap: 15px;
 }
-
-.urgent-box i {
-    font-size: 2rem; /* Icon size */
-    color: var(--main-white); /* White icon */
-}
-
-
 
 /* Past Emergency Box */
 .past-emergency-box {
@@ -88,21 +63,13 @@ footer h6 {
     color: var(--main-white); /* white text */
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.past-emergency-box i {
-    font-size: 2rem; /* Icon size */
-    color: var(--main-black); /* Black icon */
 }
 
 /* Footer Links */
 .footer-link {
     color: var(--main-white); /* white text */
-    text-decoration: none;
-    font-weight: bold; /* Bold links */
+    /* text-decoration: none;      <-- Moved to HTML (text-decoration-none) */
+    /* font-weight: bold;         <-- Moved to HTML (fw-bold) */
     padding: 5px 15px;
 }
 
