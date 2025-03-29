@@ -55,6 +55,15 @@
     border-color: var(--main-blue) !important;
 }
 
+#navbar-content {
+    background-color: var(--main-black);
+    color: var(--main-white);
+}
+
+#navbar-content h5{
+    color: var(--main-white);
+}
+
 /* Styles for the active state */
 .navbar-button.active #line-1 {
     transform: rotate(45deg) translate(7.7px, 9px); /* Rotate the first line */
@@ -93,6 +102,12 @@ nav {
     filter: invert(100%);
 }
 
+@media (min-width: 992px) {
+    #brand-text {
+        margin-left: 175px;
+    }
+}
+
 
 /* Footer */
 footer {
@@ -101,6 +116,8 @@ footer {
     padding: 30px 0; /* Adequate padding */
     border-top: 5px solid var(--main-yellow); /* Yellow top border for cartoonish feel */
     border-bottom: 5px solid var(--main-yellow); /* Yellow bottom border */
+    position:fixed;
+    bottom: 0px;
 }
 
 /* Footer Headings */
