@@ -4,6 +4,7 @@
     --main-yellow: #FDC010;
     --main-red: #E42D26;
     --main-blue: #2FBEC2;
+}
 
 /* IMPORTANT: Please use the variables above when styling your elements */
 
@@ -68,9 +69,8 @@
     transform: rotate(-45deg) translate(7.7px, -9px); /* Rotate the third line */
 }
 
-/* Header */
 
-    /* Header 1 */
+/* Header */
 nav {
     background-color: var(--main-black);
     color: var(--main-white);
@@ -93,4 +93,59 @@ nav {
     filter: invert(100%);
 }
 
+
 /* Footer */
+footer {
+    background-color: var(--main-black); /* Black background */
+    color: var(--main-white); /* White text */
+    padding: 30px 0; /* Adequate padding */
+    border-top: 5px solid var(--main-yellow); /* Yellow top border for cartoonish feel */
+    border-bottom: 5px solid var(--main-yellow); /* Yellow bottom border */
+}
+
+/* Footer Headings */
+footer h6 {
+    color: var(--main-yellow); /* Yellow color for headings */
+    font-weight: bold; /* Bold titles */
+    font-size: 1.5rem; /* Larger size for emphasis */
+    text-transform: uppercase; /* Uppercase for fun, boldness */
+}
+
+/* Contact Box */
+.contact-box {
+    background-color: var(--main-blue); /* Blue background */
+    color: var(--main-white); /* White text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Emergency Box */
+.urgent-box {
+    background-color: var(--main-red); /* Red background */
+    color: var(--main-white); /* White text */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Past Emergency Box */
+.past-emergency-box {
+    background-color: var(--main-yellow); /* Yellow background */
+    color: var(--main-white); /* white text */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Footer Links */
+.footer-link {
+    color: var(--main-white); /* white text */
+    /* text-decoration: none;      <-- Moved to HTML (text-decoration-none) */
+    /* font-weight: bold;         <-- Moved to HTML (fw-bold) */
+    padding: 5px 15px;
+}
+
+/* Mobile view for links */
+@media (max-width: 768px) {
+    .footer-link {
+        font-size: 1.1rem; /* Slightly larger text for mobile */
+    }
+}
