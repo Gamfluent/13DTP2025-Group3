@@ -1,9 +1,9 @@
 :root {
-    --main-red: #E42D26;
-    --main-blue: #2FBEC2;
-    --main-yellow: #FDC010;
     --main-black: #232323;
     --main-white: #F9F9F9;
+    --main-yellow: #FDC010;
+    --main-red: #E42D26;
+    --main-blue: #2FBEC2;
 }
 
 /* IMPORTANT: Please use the variables above when styling your elements */
@@ -17,11 +17,81 @@
 
 
 /* Please code your elements under the coments below to avoid any merge conflicts */
+/*Global*/
+.btn {
+    border-color: var(--main-blue) !important;
+    border-width: 4px !important;
+    font-weight: bold !important;
+    border-radius: 10px !important;
+    color: var(--main-blue) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
 /* Navigation */
+.navbar-button {
+    border-style: none;
+}
+
+.navbar-hamburger {
+    width: 35px;
+    height: 4px;
+    transition: all 0.3s ease; /* Add a smooth transition effect */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+}
+
+#line-1 {
+    border-color: var(--main-yellow) !important;
+    margin-bottom: 8px;
+}
+
+#line-2 {
+    border-color: var(--main-red) !important;
+    margin-bottom: 8px;
+}
+
+#line-3 {
+    border-color: var(--main-blue) !important;
+}
+
+/* Styles for the active state */
+.navbar-button.active #line-1 {
+    transform: rotate(45deg) translate(7.7px, 9px); /* Rotate the first line */
+    border-color: var(--main-blue) !important;
+}
+
+.navbar-button.active #line-2 {
+    opacity: 0; /* Hide the middle line */
+}
+
+.navbar-button.active #line-3 {
+    transform: rotate(-45deg) translate(7.7px, -9px); /* Rotate the third line */
+}
+
 
 /* Header */
+nav {
+    background-color: var(--main-black);
+    color: var(--main-white);
+}
 
-/* Footer */
+#navbar {
+    background-color: var(--main-black);
+}
+
+#brand-text {
+    color: var(--main-white);
+    font-family: 'PhosphateInline', sans-serif;
+}
+
+#brand-text p{
+    letter-spacing: 10px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
 
 
 /* Footer */
