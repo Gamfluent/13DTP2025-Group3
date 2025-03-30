@@ -4,7 +4,24 @@
 - **Oliver Prowse** (ThatOBro)  
 - **Artur Pereira** (User21412)  
 
----
+
+## Responsibilities
+
+### Oliver
+- Navigation Trialing  
+- Home Page  
+- Safety  
+
+### Kalpa
+- Header Trialing  
+- Membership Access  
+- Contacts  
+
+### Artur
+- Footer Trialing  
+- Membership Details  
+- Additional Info  
+
 
 ## Design Layout Reference
 
