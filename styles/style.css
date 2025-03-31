@@ -24,6 +24,9 @@
     font-weight: bold !important;
     border-radius: 10px !important;
     color: var(--main-blue) !important;
+}
+
+.shadow {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -38,7 +41,6 @@
     transition: all 0.3s ease; /* Add a smooth transition effect */
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
 }
 
 #line-1 {
@@ -133,7 +135,6 @@ footer h6 {
     background-color: var(--main-blue); /* Blue background */
     color: var(--main-white); /* White text */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 /* Emergency Box */
@@ -141,7 +142,6 @@ footer h6 {
     background-color: var(--main-red); /* Red background */
     color: var(--main-white); /* White text */
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 /* Past Emergency Box */
@@ -149,7 +149,6 @@ footer h6 {
     background-color: var(--main-yellow); /* Yellow background */
     color: var(--main-white); /* white text */
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 /* Footer Links */
@@ -166,3 +165,26 @@ footer h6 {
         font-size: 1.1rem; /* Slightly larger text for mobile */
     }
 }
+
+
+/* Home Page */
+
+
+
+/* Membership Access Page */
+
+
+
+/* Additional Info */
+
+
+
+/* Safety Page */
+
+
+
+/* Contacs Page */
+
+
+
+/* Membership Delas */
