@@ -30,7 +30,19 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
+.section-header {
+    height: 80px;
+}
 
+.section-header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6vw;
+    height: 100%;
+    transform: translateY(-50%);
+}
 
 /* Navigation */
 .navbar-button {
@@ -221,6 +233,17 @@ footer h6 {
     color: var(--main-white) !important; 
 }
 
+#existing-members-section::before{
+    background-image: linear-gradient(to right, var(--main-red), white);
+}
+
+#id-cards-section::before{
+    background-image: linear-gradient(to right, var(--main-blue), white);
+}
+
+#responsibilities-section::before{
+    background-image: linear-gradient(to right, var(--main-yellow), white);
+}
 
 /* Additional Info */
 
