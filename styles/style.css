@@ -27,11 +27,22 @@
 }
 
 .shadow {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+.section {
+    margin-top: 80px;
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 .section-header {
     height: 80px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-header::before {
@@ -39,9 +50,19 @@
     position: absolute;
     top: 50%;
     left: 0;
-    width: 6vw;
+    width: 6%;
     height: 100%;
     transform: translateY(-50%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.section-header h2{
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.section-content {
+    margin-top: 1rem;
 }
 
 /* Navigation */
@@ -175,7 +196,7 @@ footer {
     padding: 30px 0; /* Adequate padding */
     border-top: 5px solid var(--main-yellow); /* Yellow top border for cartoonish feel */
     border-bottom: 5px solid var(--main-yellow); /* Yellow bottom border */
-    bottom: 0px;
+    bottom: 0px;    
 }
 
 /* Footer Headings */
@@ -234,15 +255,15 @@ footer h6 {
 }
 
 #existing-members-section::before{
-    background-image: linear-gradient(to right, var(--main-red), white);
+    background-color: var(--main-red);
 }
 
 #id-cards-section::before{
-    background-image: linear-gradient(to right, var(--main-blue), white);
+    background-color: var(--main-blue);
 }
 
 #responsibilities-section::before{
-    background-image: linear-gradient(to right, var(--main-yellow), white);
+    background-color: var(--main-yellow);
 }
 
 /* Additional Info */
