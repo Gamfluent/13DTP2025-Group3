@@ -59,6 +59,7 @@
 .section-header h2{
     font-size: 1.75rem;
     font-weight: bold;
+    margin: 0;
 }
 
 .section-content {
@@ -163,6 +164,7 @@
 nav {
     background-color: var(--main-black);
     color: var(--main-white);
+    z-index: 999;
 }
 
 #navbar {
@@ -264,6 +266,10 @@ footer h6 {
 
 #responsibilities-section::before{
     background-color: var(--main-yellow);
+}
+
+#body-access {
+    z-index: 999;
 }
 
 /* Additional Info */
