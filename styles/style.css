@@ -27,7 +27,7 @@
 }
 
 .shadow {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
 }
 
 /* Navigation */
@@ -161,7 +161,6 @@ footer {
     padding: 30px 0; /* Adequate padding */
     border-top: 5px solid var(--main-yellow); /* Yellow top border for cartoonish feel */
     border-bottom: 5px solid var(--main-yellow); /* Yellow bottom border */
-    position:fixed;
     bottom: 0px;
 }
 
@@ -211,7 +210,10 @@ footer h6 {
 
 
 /* Home Page */
-
+.hero-container {
+    height: calc(100vh - 76px);
+    margin-bottom: 20px;
+}
 
 
 /* Membership Access Page */
