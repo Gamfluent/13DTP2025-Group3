@@ -6,6 +6,11 @@
     --main-blue: #2FBEC2;
 }
 
+@font-face {
+    font-family: PhosphateInline;
+    src: url('../fonts/phosphate_pro_inline_fixed.otf');
+}
+
 /* IMPORTANT: Please use the variables above when styling your elements */
 
 /* DO NOT CHANGE THE CODE BELOW */
