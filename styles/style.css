@@ -279,7 +279,7 @@ footer h6 {
 
 .col-md-6:nth-of-type(2) {
     align-self: stretch;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem !important;
 }
 
 #responsibilities-card {
