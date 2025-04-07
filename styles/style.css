@@ -189,13 +189,6 @@ nav {
     filter: invert(100%);
 }
 
-@media (min-width: 992px) {
-    #brand-text {
-        margin-left: 175px;
-    }
-}
-
-
 /* Footer */
 footer {
     background-color: var(--main-black); /* Black background */
@@ -243,14 +236,6 @@ footer h6 {
     padding: 5px 15px;
 }
 
-/* Mobile view for links */
-@media (max-width: 768px) {
-    .footer-link {
-        font-size: 1.1rem; /* Slightly larger text for mobile */
-    }
-}
-
-
 /* Home Page */
 
 
@@ -277,14 +262,14 @@ footer h6 {
     z-index: 999;
 }
 
-.col-md-6:nth-of-type(2) {
+.col-md-6 {
     align-self: stretch;
-    padding-bottom: 1.5rem !important;
 }
 
-#responsibilities-card {
+.col-md-6 section {
     height: 100%;
 }
+
 
 /* Additional Info */
 
@@ -299,3 +284,24 @@ footer h6 {
 
 
 /* Membership Delas */
+
+/* Min Large Screen Size */
+@media (min-width: 992px) {
+    #brand-text {
+        margin-left: 175px;
+    }
+}
+
+/* XS Screen Size*/
+@media (max-width: 768px) {
+    .footer-link {
+        font-size: 1.1rem; /* Slightly larger text for mobile */
+    }
+}
+
+/* Min Media Screen */
+@media (min-width: 768px) {
+    #responsibilities-section::before{
+        width: 3%;
+    }
+}
