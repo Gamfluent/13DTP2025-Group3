@@ -278,12 +278,10 @@ footer h6 {
 }
 
 .col-md-6:nth-of-type(2) {
+    display: flex;
     align-self: stretch;
     padding-bottom: 1.5rem !important;
-}
-
-#responsibilities-card {
-    height: 100%;
+    align-items: center;
 }
 
 /* Additional Info */
