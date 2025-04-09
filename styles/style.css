@@ -270,6 +270,30 @@ footer h6 {
     height: 100%;
 }
 
+.section-img-container {
+    width: 500px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.section-img-container img{
+    object-fit: cover;
+}
+
+#existing-img {
+    width: 500px;
+    transform: translateX(-100px);
+    object-fit: cover;
+}
+
+#responsibilities-card p{
+    width: 500px;
+}
+
+#responsibilities-img {
+    width: 500px;
+}
 
 /* Additional Info */
 
@@ -302,6 +326,14 @@ footer h6 {
 /* Min Media Screen */
 @media (min-width: 768px) {
     #responsibilities-section::before{
+        width: 3%;
+    }
+
+    #existing-members-section::before {
+        width: 3%;
+    }
+
+    #id-cards-section::before {
         width: 3%;
     }
 }
