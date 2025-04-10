@@ -277,13 +277,81 @@ footer h6 {
     z-index: 999;
 }
 
-.col-md-6:nth-of-type(2) {
-    align-self: stretch;
-    padding-bottom: 1.5rem !important;
+.equal-half {
+    flex: 1;
+}
+
+.section-img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.section-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#existing-members-card {
+    border: solid 2px var(--main-red) !important;
 }
 
 #responsibilities-card {
-    height: 100%;
+    margin: 0px !important;
+    border: solid 2px var(--main-yellow) !important;
+}
+
+#id-card{
+    margin: 0px !important;
+    border: solid 2px var(--main-blue) !important;
+}
+
+#card-container {
+    margin-bottom: 1rem;
+}
+
+#existing-members-section::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  background-color: var(--main-red);
+  border-radius: 4px;
+}
+
+#id-cards-section::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  background-color: var(--main-blue);
+  border-radius: 4px;
+}
+
+#responsibilities-section::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  width: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  background-color: var(--main-yellow);
+  border-radius: 4px;
 }
 
 /* Additional Info */
