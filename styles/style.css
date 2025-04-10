@@ -217,11 +217,9 @@ footer h6 {
 /* Home Page */
 .hero-container {
     height: calc(100vh - 76px);
-    margin-bottom: 20px;
 }
 
 .hero-text-container {
-    position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -229,8 +227,12 @@ footer h6 {
 #hero-text {
     color: var(--main-black);
     font-family: 'PhosphateInline', sans-serif;
-    font-size: 3rem;
-    margin-top: 20px;
+    height: 50px;
+}
+
+#join-button {
+    width: 300px;
+    margin-top: calc(100vh - 300px);
 }
 
 /* Membership Access Page */
