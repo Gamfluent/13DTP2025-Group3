@@ -189,13 +189,6 @@ nav {
     filter: invert(100%);
 }
 
-@media (min-width: 992px) {
-    #brand-text {
-        margin-left: 175px;
-    }
-}
-
-
 /* Footer */
 footer {
     background-color: var(--main-black); /* Black background */
@@ -242,14 +235,6 @@ footer h6 {
     /* font-weight: bold;         <-- Moved to HTML (fw-bold) */
     padding: 5px 15px;
 }
-
-/* Mobile view for links */
-@media (max-width: 768px) {
-    .footer-link {
-        font-size: 1.1rem; /* Slightly larger text for mobile */
-    }
-}
-
 
 /* Home Page */
 
@@ -299,59 +284,32 @@ footer h6 {
 }
 
 #responsibilities-card {
-    margin: 0px !important;
-    border: solid 2px var(--main-yellow) !important;
+    height: 100%;
 }
 
-#id-card{
-    margin: 0px !important;
-    border: solid 2px var(--main-blue) !important;
+.section-img-container {
+    width: 500px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
-#card-container {
-    margin-bottom: 1rem;
+.section-img-container img{
+    object-fit: cover;
 }
 
-#existing-members-section::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 15px;
-  width: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 4px;
-  background-color: var(--main-red);
-  border-radius: 4px;
+#existing-img {
+    width: 500px;
+    transform: translateX(-100px);
+    object-fit: cover;
 }
 
-#id-cards-section::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 15px;
-  width: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 4px;
-  background-color: var(--main-blue);
-  border-radius: 4px;
+#responsibilities-card p{
+    width: 500px;
 }
 
-#responsibilities-section::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 15px;
-  width: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 4px;
-  background-color: var(--main-yellow);
-  border-radius: 4px;
+#responsibilities-img {
+    width: 500px;
 }
 
 /* Additional Info */
@@ -367,3 +325,32 @@ footer h6 {
 
 
 /* Membership Delas */
+
+/* Min Large Screen Size */
+@media (min-width: 992px) {
+    #brand-text {
+        margin-left: 175px;
+    }
+}
+
+/* XS Screen Size*/
+@media (max-width: 768px) {
+    .footer-link {
+        font-size: 1.1rem; /* Slightly larger text for mobile */
+    }
+}
+
+/* Min Media Screen */
+@media (min-width: 768px) {
+    #responsibilities-section::before{
+        width: 3%;
+    }
+
+    #existing-members-section::before {
+        width: 3%;
+    }
+
+    #id-cards-section::before {
+        width: 3%;
+    }
+}
