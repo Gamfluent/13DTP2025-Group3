@@ -62,13 +62,14 @@
 }
 
 .section-header h2{
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 0;
 }
 
 .section-content {
     margin-top: 1rem;
+    font-size: 1.2rem;
 }
 
 /* Navigation */
@@ -352,6 +353,10 @@ footer h6 {
   height: 4px;
   background-color: var(--main-yellow);
   border-radius: 4px;
+}
+
+#responsibilities-card .section-img-container{
+    margin-bottom: 1rem;
 }
 
 /* Additional Info */
