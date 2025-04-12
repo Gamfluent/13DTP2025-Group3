@@ -29,6 +29,7 @@
     font-weight: bold !important;
     border-radius: 10px !important;
     color: var(--main-blue) !important;
+    transition: all 0.3s ease-in-out !important;
 }
 
 .shadow {
@@ -70,6 +71,10 @@
 .section-content {
     margin-top: 1rem;
     font-size: 1.2rem;
+}
+
+.custom-hover:hover {
+  transform: scale(1.05);
 }
 
 /* Navigation */
@@ -190,13 +195,6 @@ nav {
     filter: invert(100%);
 }
 
-@media (min-width: 992px) {
-    #brand-text {
-        margin-left: 175px;
-    }
-}
-
-
 /* Footer */
 footer {
     background-color: var(--main-black); /* Black background */
@@ -243,14 +241,6 @@ footer h6 {
     /* font-weight: bold;         <-- Moved to HTML (fw-bold) */
     padding: 5px 15px;
 }
-
-/* Mobile view for links */
-@media (max-width: 768px) {
-    .footer-link {
-        font-size: 1.1rem; /* Slightly larger text for mobile */
-    }
-}
-
 
 /* Home Page */
 
@@ -318,7 +308,7 @@ footer h6 {
   display: block;
   position: absolute;
   left: 0;
-  bottom: 15px;
+  bottom: 10px;
   width: 25%;
   left: 50%;
   transform: translateX(-50%);
@@ -332,7 +322,7 @@ footer h6 {
   display: block;
   position: absolute;
   left: 0;
-  bottom: 15px;
+  bottom: 10px;
   width: 25%;
   left: 50%;
   transform: translateX(-50%);
@@ -346,7 +336,7 @@ footer h6 {
   display: block;
   position: absolute;
   left: 0;
-  bottom: 15px;
+  bottom: 10px;
   width: 25%;
   left: 50%;
   transform: translateX(-50%);
@@ -372,3 +362,20 @@ footer h6 {
 
 
 /* Membership Delas */
+
+/* Mobile view for links */
+@media (max-width: 768px) {
+    .footer-link {
+        font-size: 1.1rem; /* Slightly larger text for mobile */
+    }
+
+    #card-container {
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #brand-text {
+        margin-left: 175px;
+    }
+}
