@@ -78,7 +78,7 @@
     </header>
 
     <div class="container">
-        <section class="section shadow">
+        <section id="contact-information-card"class="section shadow mt-3">
             <div id="contact-information-section" class="section-header px-4 ps-md-5 py-3">
                 <h2>Contact Information</h2>
             </div>
@@ -100,7 +100,7 @@
             </div>
         </section>
 
-        <section class="section shadow">
+        <section id="committee-card" class="section shadow">
             <div id="committee-section" class="section-header px-4 ps-md-5 py-3">
                 <h2>Committee</h2>
             </div>
@@ -122,39 +122,64 @@
             </div>
         </section>
 
-        <section class="section shadow">
+        <section class="section shadow" id="social-card">
             <div id="social-section" class="section-header px-4 ps-md-5 py-3">
                 <h2>Social</h2>
             </div>
-            <div class="section-content">
+            <div class="section-content px-4 ps-md-5 py-2">
                 <p>
-                    <strong>Facebook:</strong><br>
-                    <a href="https://www.facebook.com/groups/317417045528757/" target="_blank">
-                        https://www.facebook.com/groups/317417045528757/
-                    </a>
+                    Follow us online to stay up to date:
                 </p>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <i class="fab fa-facebook me-2"></i>
+                        <a href="https://www.facebook.com/share/g/1BbMc7WDpf/" target="_blank" rel="noopener noreferrer">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <i class="fab fa-instagram me-2"></i>
+                        <a href="https://www.instagram.com/redbeach_occ/?hl=nz-en" target="_blank" rel="noopener noreferrer">
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="mb-2">
+                        <i class="fab fa-youtube me-2"></i>
+                        <a href="https://youtube.com/@ngakaihoeoaotearoa1191?si=3of1zOB5WlRPIp3B" target="_blank" rel="noopener noreferrer">
+                            YouTube
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section class="section shadow">
+        <section class="section shadow" id="contact-form-card">
             <div id="contact-form-section" class="section-header px-4 ps-md-5 py-3">
                 <h2>Email Contact Form</h2>
             </div>
-            <div class="section-content">
+            <div class="section-content px-4 ps-md-5 py-2">
                 <form action="mailto:info@rbocc.co.nz" method="post" enctype="text/plain">
-                    <label for="first-name">First Name:</label><br>
-                    <input type="text" id="first-name" name="First Name" required><br><br>
+                    <div class="mb-3">
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input type="text" id="first-name" name="First Name" class="form-control rounded-3" required>
+                    </div>
 
-                    <label for="last-name">Last Name:</label><br>
-                    <input type="text" id="last-name" name="Last Name" required><br><br>
+                    <div class="mb-3">
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input type="text" id="last-name" name="Last Name" class="form-control rounded-3" required>
+                    </div>
 
-                    <label for="email">Email Address:</label><br>
-                    <input type="email" id="email" name="Email" required><br><br>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="Email" class="form-control rounded-3" required>
+                    </div>
 
-                    <label for="message">Comment Message:</label><br>
-                    <textarea id="message" name="Message" rows="5" required></textarea><br><br>
+                    <div class="mb-4">
+                        <label for="message" class="form-label">Comment Message</label>
+                        <textarea id="message" name="Message" rows="5" class="form-control rounded-3" required></textarea>
+                    </div>
 
-                    <button type="submit">Send</button>
+                    <button type="submit" class="btn shadow px-4 py-2">Send</button>
                 </form>
             </div>
         </section>

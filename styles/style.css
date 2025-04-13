@@ -57,7 +57,7 @@
     position: absolute;
     top: 50%;
     left: 0;
-    width: 6%;
+    width: clamp(20px, 5vw, 40px);
     height: 100%;
     transform: translateY(-50%);
     border-radius: 10px 0px 0px 10px;
@@ -347,6 +347,22 @@ footer h6 {
 }
 #contact-form-section::after {
     background-color: var(--main-blue);
+}
+
+#contact-information-card {
+    border: solid 2px var(--main-blue) !important;
+}
+
+#committee-card {
+    border: solid 2px var(--main-red) !important;
+}
+
+#social-card {
+    border: solid 2px var(--main-yellow) !important;
+}
+
+#contact-form-card {
+    border: solid 2px var(--main-blue) !important;
 }
 
 /* Membership Delas */
