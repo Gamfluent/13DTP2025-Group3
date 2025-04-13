@@ -49,7 +49,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 1rem;
 }
 
 .section-header::before {
@@ -364,6 +363,13 @@ footer h6 {
 #contact-form-card {
     border: solid 2px var(--main-blue) !important;
 }
+
+.focus-style:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(47, 190, 194, 0.5);
+    border-color: var(--main-blue);
+}
+
 
 /* Membership Delas */
 
