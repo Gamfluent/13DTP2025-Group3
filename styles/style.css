@@ -43,12 +43,13 @@
 }
 
 .section-header {
-    height: 80px;
     text-align: center;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
 }
 
 .section-header::before {
@@ -62,12 +63,23 @@
     border-radius: 10px 0px 0px 10px;
 }
 
-.section-header h2{
+.section-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.section-header h2 {
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
+    position: relative;
 }
-
 .section-content {
     margin-top: 1rem;
     font-size: 1.2rem;
@@ -266,45 +278,15 @@ footer h6 {
 }
 
 #existing-members-section::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  width: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 4px;
   background-color: var(--main-red);
-  border-radius: 4px;
 }
 
 #id-cards-section::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  width: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 4px;
   background-color: var(--main-blue);
-  border-radius: 4px;
 }
 
 #responsibilities-section::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  width: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 4px;
   background-color: var(--main-yellow);
-  border-radius: 4px;
 }
 
 #responsibilities-card .section-img-container{
@@ -330,49 +312,6 @@ footer h6 {
     color: var(--main-black) !important; 
 }
 
-
-.section {
-    margin-bottom: 1.5rem;
-    border-radius: 10px;
-    padding: 1rem;
-}
-
-.section-header {
-    height: 80px;
-    text-align: center;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-header::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 6%;
-    height: 100%;
-    transform: translateY(-50%);
-    border-radius: 10px 0px 0px 10px;
-}
-
-.section-header h2 {
-    font-size: 1.75rem;
-    font-weight: bold;
-    margin: 0;
-}
-
-.section-content {
-    margin-top: 1rem;
-}
-
-#info-title::before {
-    background-color: var(--main-red) !important;
-}
-
-
-
 /*............................none lmao colours are auto anyway black on white. MAYBE ADD HOVERS? ACTUALLY U HAV TO*/
 
 
@@ -381,8 +320,34 @@ footer h6 {
 
 
 /* Contacs Page */
+#contact-information-section::before {
+    background-color: var(--main-blue);
+}
 
+#committee-section::before {
+    background-color: var(--main-red);
+}
 
+#social-section::before {
+    background-color: var(--main-yellow);
+}
+
+#contact-form-section::before {
+    background-color: var(--main-blue);
+}
+
+#contact-information-section::after {
+    background-color: var(--main-blue);
+}
+#committee-section::after {
+    background-color: var(--main-red);
+}
+#social-section::after {
+    background-color: var(--main-yellow);
+}
+#contact-form-section::after {
+    background-color: var(--main-blue);
+}
 
 /* Membership Delas */
 

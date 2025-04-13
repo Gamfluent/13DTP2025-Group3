@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Contacts</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar">
+            <div id="navContainer" class="container justify-content-between align-items-center">
+                <a href="#" class="navbar-brand text-light align-items-center">
+                    <img class="shadow" src="../../images/logo-color.png" alt="Logo" width="50">
+                </a>
+
+                <div id="brand-text" class="fs-3 justify-content-center align-items-center">
+                    <p class="my-auto">RBOCC</p>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <!-- Desktop Portal Button -->
+                    <button type="button" onclick="window.open('https://www.wakaama.co.nz/members-area/', '_blank')" class="btn d-none d-lg-inline me-2 shadow">Portal</button>
+
+                    <!-- Desktop Contact Button (assumed it should do something) -->
+                    <button type="button" onclick="window.location.href='../Contacts/'" class="btn d-none d-lg-inline me-2 shadow">Contact</button>
+
+                    <!-- Hamburger Menu Button -->
+                    <button
+                        class="navbar-button mx-2 bg-transparent"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        onclick="this.classList.toggle('active')"
+                    >
+                        <span class="navbar-hamburger shadow rounded border d-block mb-2" id="line-1"></span>
+                        <span class="navbar-hamburger shadow rounded border d-block mb-2" id="line-2"></span>
+                        <span class="navbar-hamburger shadow rounded border d-block" id="line-3"></span>
+                    </button>
+
+                    <!-- Mobile Menu -->
+                    <div class="collapse position-absolute top-100 end-0" id="navbarToggleExternalContent">
+                        <div class="p-4" id="navbar-content">
+                            <h5><a href="../Home/" class="h4 text-decoration-none">Home page</a></h5>
+                            <h5><a href="../Membership-Access/" class="h4 text-decoration-none">Membership Access</a></h5>
+                            <h5><a href="../Membership-Details/" class="h4 text-decoration-none">Membership Details</a></h5>
+                            <h5><a href="../Safety/" class="h4 text-decoration-none">Safety</a></h5>
+                            <h5><a href="../Additional-Info/" class="h4 text-decoration-none">Additional Info</a></h5>
+                            <h5><a href="../Contacts/" class="h4 text-decoration-none">Contacts</a></h5>
+
+                            <!-- Mobile Portal Button -->
+                            <button
+                                type="button"
+                                onclick="window.open('https://www.wakaama.co.nz/members-area/', '_blank')"
+                                class="btn btn-lg d-lg-none me-2"
+                            >
+                                Portal
+                            </button>
+
+                            <!-- Mobile Contact Button -->
+                            <button
+                                type="button"
+                                onclick="window.location.href='../Contacts/'"
+                                class="btn btn-lg d-lg-none"
+                            >
+                                Contact
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="section shadow">
+            <div id="contact-information-section" class="section-header px-4 ps-md-5 py-3">
+                <h2>Contact Information</h2>
+            </div>
+            <div class="section-content">
+                <p>
+                    Red Beach Outrigger Canoe Club wants to connect with you!<br>
+                    For all enquiries please email us at <a href="mailto:info@rbocc.co.nz">info@rbocc.co.nz</a> and we will get back to you as soon as we can.
+                </p>
+                <p>
+                    <strong>Red Beach Outrigger Canoe Club is located at:</strong><br>
+                    Ngapara Street<br>
+                    Red Beach<br>
+                    Whangaparoa<br>
+                    Auckland 0932
+                </p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:info@rbocc.co.nz">info@rbocc.co.nz</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="section shadow">
+            <div id="committee-section" class="section-header px-4 ps-md-5 py-3">
+                <h2>Committee</h2>
+            </div>
+            <div class="section-content">
+                <p>
+                    <strong>President:</strong> Shahram Saboori<br>
+                    <a href="mailto:president@rbocc.co.nz">president@rbocc.co.nz</a><br><br>
+
+                    <strong>Secretary:</strong> Casey Smith<br>
+                    <a href="mailto:info@rbocc.co.nz">info@rbocc.co.nz</a><br><br>
+
+                    <strong>Treasurer:</strong> Charlotte Blanchard<br>
+                    <a href="mailto:treasurer@rbocc.co.nz">treasurer@rbocc.co.nz</a><br><br>
+
+                    <strong>Committee Members:</strong><br>
+                    Riley Duff<br>
+                    Gary Conaghan
+                </p>
+            </div>
+        </section>
+
+        <section class="section shadow">
+            <div id="social-section" class="section-header px-4 ps-md-5 py-3">
+                <h2>Social</h2>
+            </div>
+            <div class="section-content">
+                <p>
+                    <strong>Facebook:</strong><br>
+                    <a href="https://www.facebook.com/groups/317417045528757/" target="_blank">
+                        https://www.facebook.com/groups/317417045528757/
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <section class="section shadow">
+            <div id="contact-form-section" class="section-header px-4 ps-md-5 py-3">
+                <h2>Email Contact Form</h2>
+            </div>
+            <div class="section-content">
+                <form action="mailto:info@rbocc.co.nz" method="post" enctype="text/plain">
+                    <label for="first-name">First Name:</label><br>
+                    <input type="text" id="first-name" name="First Name" required><br><br>
+
+                    <label for="last-name">Last Name:</label><br>
+                    <input type="text" id="last-name" name="Last Name" required><br><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="Email" required><br><br>
+
+                    <label for="message">Comment Message:</label><br>
+                    <textarea id="message" name="Message" rows="5" required></textarea><br><br>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer class="container-fluid py-3 mt-auto">
+        <div class="container">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <div></div>
+
+                <div class="text-center mb-3 mb-md-0">
+                    <h6 class="mb-1 fw-bold text-uppercase">Contact Us</h6>
+                    <div class="d-flex align-items-center justify-content-center gap-3 contact-box px-2 py-2 shadow">
+                    Our Email: Info@rbocc.co.nz
+                    </div>
+                </div>
+
+                <div></div>
+
+                <div class="text-center mb-3 mb-md-0">
+                    <h6 class="mb-1 fw-bold text-uppercase">Emergency</h6>
+                    <div class="d-flex align-items-center justify-content-center gap-3 info-box px-2 py-2 urgent-box shadow">
+                    111 if it's happening now
+                    </div>
+                </div>
+
+                <div></div>
+
+                <div class="text-center">
+                    <h6 class="mb-1 fw-bold text-uppercase">Emergency</h6>
+                    <div class="d-flex align-items-center justify-content-center gap-3 info-box px-2 py-2 past-emergency-box shadow">
+                    105 if it has already happened
+                    </div>
+                </div>
+
+                <div></div>
+            </div>
+
+            <div class="container-fluid text-center mt-3 d-flex justify-content-between">
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Maritime Rules</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Weather</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Swell Map</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Water Safety</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Auckland Tides</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Coastguard</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Constitution</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
