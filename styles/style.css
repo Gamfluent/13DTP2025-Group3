@@ -66,6 +66,12 @@
     color: var(--main-white);
 }
 
+@media (min-width: 575px){
+    #navContainer {
+        position: relative;
+    }
+}
+
 /* Styles for the active state */
 .navbar-button.active #line-1 {
     transform: rotate(45deg) translate(7.7px, 9px); /* Rotate the first line */
@@ -79,50 +85,6 @@
 .navbar-button.active #line-3 {
     transform: rotate(-45deg) translate(7.7px, -9px); /* Rotate the third line */
 }
-
-#navbarToggleExternalContent {
-    position: absolute;
-    top: 100%;
-}
-
-@media (max-width: 575px) {
-    #navbarToggleExternalContent {
-        right: 0%; /* Moves inward slightly for extre-small screens */
-    }
-}
-
-@media (min-width: 576px) {
-    #navbarToggleExternalContent {
-        right: 0%; /* Moves inward slightly for small screens */
-    }
-}
-
-@media (min-width: 768px) {
-    #navbarToggleExternalContent {
-        right: 0%; /* Moves further inward for medium screens */
-    }
-}
-
-@media (min-width: 992px) {
-    #navbarToggleExternalContent {
-        left: 70%; /* Moves further inward for large screens */
-    }
-}
-
-@media (min-width: 1200px) {
-    #navbarToggleExternalContent {
-        left: 73%; /* Moves further inward for extra-large screens */
-        margin-right: 50px;
-    }
-}
-
-@media (min-width: 1400px) {
-    #navbarToggleExternalContent {
-        left: 78%; /* Moves further inward for extra-extra-large screens */
-        margin-right: 50px;
-    }
-}
-
 
 /* Header */
 nav {
