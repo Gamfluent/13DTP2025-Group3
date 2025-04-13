@@ -368,7 +368,7 @@ footer h6 {
 /* Membership Delas */
 
 /* Mobile view for links */
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* md-max */
     .footer-link {
         font-size: 1.1rem; /* Slightly larger text for mobile */
     }
@@ -378,8 +378,30 @@ footer h6 {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) { /* lg */
     #brand-text {
         margin-left: 175px;
     }
+
+    .section-header::after {
+        left: calc(50% + 0.85rem);
+    }
+}
+
+@media (min-width: 768px) { /* md */
+  .section-header::after {
+    left: calc(50% + 0.85rem);
+  }
+}
+
+@media (min-width: 1200px) { /* xl */
+  .section-header::after {
+    left: calc(50% + 0.85rem);
+  }
+}
+
+@media (min-width: 1400px) { /* xxl */
+  .section-header::after {
+    left: calc(50% + 0.85rem);
+  }
 }
