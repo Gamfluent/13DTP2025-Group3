@@ -35,6 +35,42 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
 }
 
+.section {
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.section-header {
+    height: 80px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6%;
+    height: 100%;
+    transform: translateY(-50%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.section-header h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section-content {
+    margin-top: 1rem;
+}
+
 /* Navigation */
 .navbar-button {
     border-style: none;
@@ -88,6 +124,7 @@
 #navbarToggleExternalContent {
     position: absolute;
     top: 100%;
+    z-index: 1001;
 }
 
 @media (max-width: 575px) {
@@ -216,7 +253,7 @@ footer h6 {
 
 /* Home Page */
 .hero-container {
-    height: calc(100vh - 76px);
+    height: calc(100vh - 75px);
 }
 
 .hero-text-container {
@@ -228,11 +265,20 @@ footer h6 {
     color: var(--main-black);
     font-family: 'PhosphateInline', sans-serif;
     height: 50px;
+    z-index: 1000;
 }
 
 #join-button {
     width: 300px;
     margin-top: calc(100vh - 300px);
+}
+
+#our-mission-header::before {
+    background-color: var(--main-red);
+}
+
+#what-we-are-header::before {
+    background-color: var(--main-blue);
 }
 
 /* Membership Access Page */
