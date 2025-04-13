@@ -113,6 +113,12 @@
     color: var(--main-white);
 }
 
+@media (min-width: 575px){
+    #navContainer {
+        position: relative;
+    }
+}
+
 /* Styles for the active state */
 .navbar-button.active #line-1 {
     transform: rotate(45deg) translate(7.7px, 9px); /* Rotate the first line */
@@ -126,50 +132,6 @@
 .navbar-button.active #line-3 {
     transform: rotate(-45deg) translate(7.7px, -9px); /* Rotate the third line */
 }
-
-#navbarToggleExternalContent {
-    position: absolute;
-    top: 100%;
-}
-
-@media (max-width: 575px) {
-    #navbarToggleExternalContent {
-        right: 0%; /* Moves inward slightly for extre-small screens */
-    }
-}
-
-@media (min-width: 576px) {
-    #navbarToggleExternalContent {
-        right: 0%; /* Moves inward slightly for small screens */
-    }
-}
-
-@media (min-width: 768px) {
-    #navbarToggleExternalContent {
-        right: 0%; /* Moves further inward for medium screens */
-    }
-}
-
-@media (min-width: 992px) {
-    #navbarToggleExternalContent {
-        left: 70%; /* Moves further inward for large screens */
-    }
-}
-
-@media (min-width: 1200px) {
-    #navbarToggleExternalContent {
-        left: 73%; /* Moves further inward for extra-large screens */
-        margin-right: 50px;
-    }
-}
-
-@media (min-width: 1400px) {
-    #navbarToggleExternalContent {
-        left: 78%; /* Moves further inward for extra-extra-large screens */
-        margin-right: 50px;
-    }
-}
-
 
 /* Header */
 nav {
@@ -351,6 +313,67 @@ footer h6 {
 
 /* Additional Info */
 
+.nav-link {
+    color: var(--main-white) !important; 
+}
+
+.small {
+    font-size: 0.85rem; !important /* Slightly smaller font size */
+}
+
+.nav-link {
+    transition: background-color 0.9s ease, color 0.9s ease; /* Smooth transition */
+}
+
+.nav-link:hover {
+    background-color: var(--main-white); 
+    color: var(--main-black) !important; 
+}
+
+
+.section {
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.section-header {
+    height: 80px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6%;
+    height: 100%;
+    transform: translateY(-50%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.section-header h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section-content {
+    margin-top: 1rem;
+}
+
+#info-title::before {
+    background-color: var(--main-red) !important;
+}
+
+
+
+/*............................none lmao colours are auto anyway black on white. MAYBE ADD HOVERS? ACTUALLY U HAV TO*/
 
 
 /* Safety Page */
