@@ -278,10 +278,6 @@ footer h6 {
 }
 
 
-
-/*............................none lmao colours are auto anyway black on white. MAYBE ADD HOVERS? ACTUALLY U HAV TO*/
-
-
 /* Safety Page */
 
 
@@ -290,4 +286,71 @@ footer h6 {
 
 
 
-/* Membership Delas */
+/* Membership Deals */
+
+/* Basic Membership */
+
+#membership-page {
+    min-height: 70vh; /* Adjust this value as needed */
+}
+
+.basic {
+    border-color: var(--main-blue)!important;
+}
+
+.basic .card-title {
+    color: var(--main-blue);
+}
+
+.basic .btn {
+    color: var(--main-blue)!important;
+    border: 2px solid var(--main-blue)!important;
+}
+
+.basic .btn:hover {
+    background-color: var(--main-blue);
+    color: var(--main-white)!important;
+}
+
+/* Standard Membership */
+.standard {
+    border-color: var(--main-red)!important;
+}
+
+.standard .card-title {
+    color: var(--main-red);
+}
+
+.standard .btn {
+    color: var(--main-red)!important;
+    border: 2px solid var(--main-red)!important;
+}
+
+.standard .btn:hover {
+    background-color: var(--main-red);
+    color: var(--main-white)!important;
+}
+
+/* Premium Membership */
+.premium {
+    border-color: var(--main-yellow)!important;
+}
+
+.premium .card-title {
+    color: var(--main-yellow); 
+}
+
+.premium .btn {
+    color: var(--main-yellow)!important;
+    border: 2px solid var(--main-yellow)!important;
+}
+
+.premium .btn:hover {
+    background-color: var(--main-yellow);
+    color: var(--main-white)!important;
+}
+
+/* Ensure dropdown is on top */
+#navbarToggleExternalContent {
+    z-index: 1050;
+}
