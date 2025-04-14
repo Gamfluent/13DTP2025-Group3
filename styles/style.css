@@ -6,6 +6,11 @@
     --main-blue: #2FBEC2;
 }
 
+@font-face {
+    font-family: PhosphateInline;
+    src: url('../fonts/phosphate_pro_inline_fixed.otf');
+}
+
 /* IMPORTANT: Please use the variables above when styling your elements */
 
 /* DO NOT CHANGE THE CODE BELOW */
@@ -24,10 +29,52 @@
     font-weight: bold !important;
     border-radius: 10px !important;
     color: var(--main-blue) !important;
+    transition: all 0.3s ease-in-out !important;
 }
 
 .shadow {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+.section {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.section-header {
+    height: 80px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6%;
+    height: 100%;
+    transform: translateY(-50%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.section-header h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section-content {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.custom-hover:hover {
+  transform: scale(1.05);
 }
 
 /* Navigation */
@@ -66,6 +113,12 @@
     color: var(--main-white);
 }
 
+@media (min-width: 575px){
+    #navContainer {
+        position: relative;
+    }
+}
+
 /* Styles for the active state */
 .navbar-button.active #line-1 {
     transform: rotate(45deg) translate(7.7px, 9px); /* Rotate the first line */
@@ -80,54 +133,11 @@
     transform: rotate(-45deg) translate(7.7px, -9px); /* Rotate the third line */
 }
 
-#navbarToggleExternalContent {
-    position: absolute;
-    top: 100%;
-}
-
-@media (max-width: 575px) {
-    #navbarToggleExternalContent {
-        right: 0%; /* Moves inward slightly for extre-small screens */
-    }
-}
-
-@media (min-width: 576px) {
-    #navbarToggleExternalContent {
-        right: 0%; /* Moves inward slightly for small screens */
-    }
-}
-
-@media (min-width: 768px) {
-    #navbarToggleExternalContent {
-        right: 0%; /* Moves further inward for medium screens */
-    }
-}
-
-@media (min-width: 992px) {
-    #navbarToggleExternalContent {
-        left: 70%; /* Moves further inward for large screens */
-    }
-}
-
-@media (min-width: 1200px) {
-    #navbarToggleExternalContent {
-        left: 73%; /* Moves further inward for extra-large screens */
-        margin-right: 50px;
-    }
-}
-
-@media (min-width: 1400px) {
-    #navbarToggleExternalContent {
-        left: 78%; /* Moves further inward for extra-extra-large screens */
-        margin-right: 50px;
-    }
-}
-
-
 /* Header */
 nav {
     background-color: var(--main-black);
     color: var(--main-white);
+    z-index: 999;
 }
 
 #navbar {
@@ -147,13 +157,6 @@ nav {
     filter: invert(100%);
 }
 
-@media (min-width: 992px) {
-    #brand-text {
-        margin-left: 175px;
-    }
-}
-
-
 /* Footer */
 footer {
     background-color: var(--main-black); /* Black background */
@@ -161,7 +164,7 @@ footer {
     padding: 30px 0; /* Adequate padding */
     border-top: 5px solid var(--main-yellow); /* Yellow top border for cartoonish feel */
     border-bottom: 5px solid var(--main-yellow); /* Yellow bottom border */
-    bottom: 0px;
+    bottom: 0px;    
 }
 
 /* Footer Headings */
@@ -201,21 +204,112 @@ footer h6 {
     padding: 5px 15px;
 }
 
-/* Mobile view for links */
-@media (max-width: 768px) {
-    .footer-link {
-        font-size: 1.1rem; /* Slightly larger text for mobile */
-    }
-}
-
-
 /* Home Page */
 
 
 
 /* Membership Access Page */
+#portal-button {
+    background-color: var(--main-blue);
+    color: var(--main-white) !important; 
+}
 
+#existing-members-section::before{
+    background-color: var(--main-red);
+}
 
+#id-cards-section::before{
+    background-color: var(--main-blue);
+}
+
+#responsibilities-section::before{
+    background-color: var(--main-yellow);
+}
+
+#body-access {
+    z-index: 999;
+}
+
+.equal-half {
+    flex: 1;
+}
+
+.section-img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.section-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#existing-members-card {
+    border: solid 2px var(--main-red) !important;
+}
+
+#responsibilities-card {
+    margin: 0px !important;
+    border: solid 2px var(--main-yellow) !important;
+}
+
+#id-card{
+    margin: 0px !important;
+    border: solid 2px var(--main-blue) !important;
+}
+
+#card-container {
+    margin-bottom: 1rem;
+}
+
+#existing-members-section::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  background-color: var(--main-red);
+  border-radius: 4px;
+}
+
+#id-cards-section::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  background-color: var(--main-blue);
+  border-radius: 4px;
+}
+
+#responsibilities-section::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  background-color: var(--main-yellow);
+  border-radius: 4px;
+}
+
+#responsibilities-card .section-img-container{
+    margin-bottom: 1rem;
+}
 
 /* Additional Info */
 
@@ -224,7 +318,7 @@ footer h6 {
 }
 
 .small {
-    font-size: 0.85rem; !important /* Slightly smaller font size */
+    font-size: 0.85rem !important; /* Slightly smaller font size */
 }
 
 .nav-link {
@@ -249,4 +343,21 @@ footer h6 {
 
 
 
-/* Membership Deals */
+/* Membership Delas */
+
+/* Mobile view for links */
+@media (max-width: 768px) {
+    .footer-link {
+        font-size: 1.1rem; /* Slightly larger text for mobile */
+    }
+
+    #card-container {
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #brand-text {
+        margin-left: 175px;
+    }
+}
