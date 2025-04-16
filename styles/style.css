@@ -343,7 +343,100 @@ footer h6 {
 
 
 
-/* Membership Delas */
+/* Membership Details */
+
+/* Basic Membership */
+
+#membership-page {
+    min-height: 70vh; 
+}
+
+.basic {
+    border-color: var(--main-blue)!important;
+}
+
+.basic .card-title {
+    color: var(--main-black);
+}
+
+.basic .btn {
+    color: var(--main-black)!important;
+    border: 2px solid var(--main-blue)!important;
+}
+
+.basic .btn:hover {
+    background-color: var(--main-blue);
+    color: var(--main-white)!important;
+}
+
+/* Standard Membership */
+.standard {
+    border-color: var(--main-red)!important;
+}
+
+.standard .card-title {
+    color: var(--main-black);
+}
+
+.standard .btn {
+    color: var(--main-black)!important;
+    border: 2px solid var(--main-red)!important;
+}
+
+.standard .btn:hover {
+    background-color: var(--main-red);
+    color: var(--main-white)!important;
+}
+
+/* Premium Membership */
+.premium {
+    border-color: var(--main-yellow)!important;
+}
+
+.premium .card-title {
+    color: var(--main-black); 
+}
+
+.premium .btn {
+    color: var(--main-black)!important;
+    border: 2px solid var(--main-yellow)!important;
+}
+
+.premium .btn:hover {
+    background-color: var(--main-yellow);
+    color: var(--main-white)!important;
+}
+
+/* Ensure dropdown is on top */
+#navbarToggleExternalContent {
+    z-index: 1050;
+}
+
+
+
+
+/* Custom background color and rounded corners for the first section */
+.bg-blue {
+    background-color: var(--main-blue); /* Blue color */
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+/* Second Section with white background */
+.bg-white {
+    background-color: white; /* White background for the second section */
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+/* Border with blue color */
+.border-blue {
+    border: 1px solid var(--main-blue); /* Blue border */
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+.text-blue {
+    color: var(--main-blue); /* Blue color for text */
+}
+
 
 /* Mobile view for links */
 @media (max-width: 768px) {
