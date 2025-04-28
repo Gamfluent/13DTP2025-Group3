@@ -311,22 +311,6 @@ footer h6 {
     color: var(--main-black) !important; 
 }
 
-/*............................none lmao colours are auto anyway black on white. MAYBE ADD HOVERS? ACTUALLY U HAV TO*/
-
-
-/* Safety Page */
-
-
-
-/* Contacs Page */
-#contact-information-section::before {
-    background-color: var(--main-blue);
-}
-
-#committee-section::before {
-    background-color: var(--main-red);
-}
-
 #social-section::before {
     background-color: var(--main-yellow);
 }
@@ -351,6 +335,8 @@ footer h6 {
 #contact-information-card {
     border: solid 2px var(--main-blue) !important;
 }
+
+/* Safety Page */
 
 #committee-card {
     border: solid 2px var(--main-red) !important;
