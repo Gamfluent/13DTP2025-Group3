@@ -29,6 +29,7 @@
     font-weight: bold !important;
     border-radius: 10px !important;
     color: var(--main-blue) !important;
+    transition: all 0.3s ease-in-out !important;
 }
 
 .shadow {
@@ -62,13 +63,18 @@
 }
 
 .section-header h2{
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: bold;
     margin: 0;
 }
 
 .section-content {
     margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.custom-hover:hover {
+  transform: scale(1.05);
 }
 
 /* Navigation */
@@ -107,6 +113,12 @@
     color: var(--main-white);
 }
 
+@media (min-width: 575px){
+    #navContainer {
+        position: relative;
+    }
+}
+
 /* Styles for the active state */
 .navbar-button.active #line-1 {
     transform: rotate(45deg) translate(7.7px, 9px); /* Rotate the first line */
@@ -120,50 +132,6 @@
 .navbar-button.active #line-3 {
     transform: rotate(-45deg) translate(7.7px, -9px); /* Rotate the third line */
 }
-
-#navbarToggleExternalContent {
-    position: absolute;
-    top: 100%;
-}
-
-@media (max-width: 575px) {
-    #navbarToggleExternalContent {
-        right: 0%; /* Moves inward slightly for extre-small screens */
-    }
-}
-
-@media (min-width: 576px) {
-    #navbarToggleExternalContent {
-        right: 0%; /* Moves inward slightly for small screens */
-    }
-}
-
-@media (min-width: 768px) {
-    #navbarToggleExternalContent {
-        right: 0%; /* Moves further inward for medium screens */
-    }
-}
-
-@media (min-width: 992px) {
-    #navbarToggleExternalContent {
-        left: 70%; /* Moves further inward for large screens */
-    }
-}
-
-@media (min-width: 1200px) {
-    #navbarToggleExternalContent {
-        left: 73%; /* Moves further inward for extra-large screens */
-        margin-right: 50px;
-    }
-}
-
-@media (min-width: 1400px) {
-    #navbarToggleExternalContent {
-        left: 78%; /* Moves further inward for extra-extra-large screens */
-        margin-right: 50px;
-    }
-}
-
 
 /* Header */
 nav {
@@ -284,36 +252,128 @@ footer h6 {
 }
 
 #responsibilities-card {
-    height: 100%;
+    margin: 0px !important;
+    border: solid 2px var(--main-yellow) !important;
 }
 
-.section-img-container {
-    width: 500px;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 8px;
+#id-card{
+    margin: 0px !important;
+    border: solid 2px var(--main-blue) !important;
 }
 
-.section-img-container img{
-    object-fit: cover;
+#card-container {
+    margin-bottom: 1rem;
 }
 
-#existing-img {
-    width: 500px;
-    transform: translateX(-100px);
-    object-fit: cover;
+#existing-members-section::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  background-color: var(--main-red);
+  border-radius: 4px;
 }
 
-#responsibilities-card p{
-    width: 500px;
+#id-cards-section::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  background-color: var(--main-blue);
+  border-radius: 4px;
 }
 
-#responsibilities-img {
-    width: 500px;
+#responsibilities-section::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  background-color: var(--main-yellow);
+  border-radius: 4px;
+}
+
+#responsibilities-card .section-img-container{
+    margin-bottom: 1rem;
 }
 
 /* Additional Info */
 
+.nav-link {
+    color: var(--main-white) !important; 
+}
+
+.small {
+    font-size: 0.85rem; !important /* Slightly smaller font size */
+}
+
+.nav-link {
+    transition: background-color 0.9s ease, color 0.9s ease; /* Smooth transition */
+}
+
+.nav-link:hover {
+    background-color: var(--main-white); 
+    color: var(--main-black) !important; 
+}
+
+
+.section {
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.section-header {
+    height: 80px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6%;
+    height: 100%;
+    transform: translateY(-50%);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.section-header h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section-content {
+    margin-top: 1rem;
+}
+
+#info-title::before {
+    background-color: var(--main-red) !important;
+}
+
+
+
+/*............................none lmao colours are auto anyway black on white. MAYBE ADD HOVERS? ACTUALLY U HAV TO*/
 
 
 /* Safety Page */
@@ -326,31 +386,19 @@ footer h6 {
 
 /* Membership Delas */
 
-/* Min Large Screen Size */
-@media (min-width: 992px) {
-    #brand-text {
-        margin-left: 175px;
-    }
-}
-
-/* XS Screen Size*/
+/* Mobile view for links */
 @media (max-width: 768px) {
     .footer-link {
         font-size: 1.1rem; /* Slightly larger text for mobile */
     }
+
+    #card-container {
+        gap: 1rem;
+    }
 }
 
-/* Min Media Screen */
-@media (min-width: 768px) {
-    #responsibilities-section::before{
-        width: 3%;
-    }
-
-    #existing-members-section::before {
-        width: 3%;
-    }
-
-    #id-cards-section::before {
-        width: 3%;
+@media (min-width: 992px) {
+    #brand-text {
+        margin-left: 175px;
     }
 }
