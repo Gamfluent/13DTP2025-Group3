@@ -318,7 +318,7 @@ footer h6 {
 }
 
 .small {
-    font-size: 0.85rem; !important /* Slightly smaller font size */
+    font-size: 0.85rem !important; /* Slightly smaller font size */
 }
 
 .nav-link {
