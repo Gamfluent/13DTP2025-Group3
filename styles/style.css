@@ -43,12 +43,12 @@
 }
 
 .section-header {
-    height: 80px;
     text-align: center;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .section-header::before {
@@ -56,18 +56,29 @@
     position: absolute;
     top: 50%;
     left: 0;
-    width: 6%;
+    width: clamp(20px, 5vw, 40px);
     height: 100%;
     transform: translateY(-50%);
     border-radius: 10px 0px 0px 10px;
 }
 
-.section-header h2{
+.section-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.section-header h2 {
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
+    position: relative;
 }
-
 .section-content {
     margin-top: 1rem;
     font-size: 1.2rem;
@@ -266,45 +277,15 @@ footer h6 {
 }
 
 #existing-members-section::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  width: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 4px;
   background-color: var(--main-red);
-  border-radius: 4px;
 }
 
 #id-cards-section::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  width: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 4px;
   background-color: var(--main-blue);
-  border-radius: 4px;
 }
 
 #responsibilities-section::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  width: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 4px;
   background-color: var(--main-yellow);
-  border-radius: 4px;
 }
 
 #responsibilities-card .section-img-container{
@@ -330,23 +311,56 @@ footer h6 {
     color: var(--main-black) !important; 
 }
 
-#info-title::before {
-    background-color: var(--main-red) !important;
+#social-section::before {
+    background-color: var(--main-yellow);
 }
 
+#contact-form-section::before {
+    background-color: var(--main-blue);
+}
+
+#contact-information-section::after {
+    background-color: var(--main-blue);
+}
+#committee-section::after {
+    background-color: var(--main-red);
+}
+#social-section::after {
+    background-color: var(--main-yellow);
+}
+#contact-form-section::after {
+    background-color: var(--main-blue);
+}
+
+#contact-information-card {
+    border: solid 2px var(--main-blue) !important;
+}
 
 /* Safety Page */
 
+#committee-card {
+    border: solid 2px var(--main-red) !important;
+}
 
+#social-card {
+    border: solid 2px var(--main-yellow) !important;
+}
 
-/* Contacs Page */
+#contact-form-card {
+    border: solid 2px var(--main-blue) !important;
+}
 
+.focus-style:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(47, 190, 194, 0.5);
+    border-color: var(--main-blue);
+}
 
 
 /* Membership Delas */
 
 /* Mobile view for links */
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* md-max */
     .footer-link {
         font-size: 1.1rem; /* Slightly larger text for mobile */
     }
@@ -356,8 +370,30 @@ footer h6 {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) { /* lg */
     #brand-text {
         margin-left: 175px;
     }
+
+    .section-header::after {
+        left: calc(50% + 0.85rem);
+    }
+}
+
+@media (min-width: 768px) { /* md */
+  .section-header::after {
+    left: calc(50% + 0.85rem);
+  }
+}
+
+@media (min-width: 1200px) { /* xl */
+  .section-header::after {
+    left: calc(50% + 0.85rem);
+  }
+}
+
+@media (min-width: 1400px) { /* xxl */
+  .section-header::after {
+    left: calc(50% + 0.85rem);
+  }
 }
