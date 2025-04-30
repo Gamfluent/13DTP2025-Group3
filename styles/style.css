@@ -69,6 +69,7 @@
 
 .section-content {
     margin-top: 1rem;
+    font-size: 1.5rem;
 }
 
 /* Navigation */
@@ -271,6 +272,9 @@ footer h6 {
 #join-button {
     width: 300px;
     margin-top: calc(100vh - 300px);
+    background-color: var(--main-blue);
+    outline-color: transparent;
+    color: var(--main-white) !important;
 }
 
 #our-mission-header::before {
@@ -279,6 +283,19 @@ footer h6 {
 
 #what-we-are-header::before {
     background-color: var(--main-blue);
+}
+
+.image-gallery {
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    height: 600px;
+
+}
+  
+.image-gallery img {
+    height: 600px;
 }
 
 /* Membership Access Page */
