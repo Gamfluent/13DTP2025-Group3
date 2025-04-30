@@ -70,6 +70,7 @@
 
 .section-content {
     margin-top: 1rem;
+}
 
 .section-header::after {
     content: '';
