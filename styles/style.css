@@ -252,7 +252,7 @@ footer h6 {
 
 #what-we-are-header::before {
     background-color: var(--main-blue);
-
+}
 
 /* Membership Access Page */
 #portal-button {
@@ -460,8 +460,6 @@ footer h6 {
 #navbarToggleExternalContent {
     z-index: 1050;
 }
-
-
 
 
 /* Custom background color and rounded corners for the first section */
