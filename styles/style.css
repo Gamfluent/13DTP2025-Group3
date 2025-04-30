@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: PhosphateInline;
+    font-family: 'PhosphateInline';
     src: url('../fonts/phosphate_pro_inline_fixed.otf');
 }
 
@@ -61,6 +61,15 @@
     transform: translateY(-50%);
     border-radius: 10px 0px 0px 10px;
 }
+
+.section-header h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.section-content {
+    margin-top: 1rem;
 
 .section-header::after {
     content: '';
@@ -175,7 +184,7 @@ footer {
     padding: 30px 0; /* Adequate padding */
     border-top: 5px solid var(--main-yellow); /* Yellow top border for cartoonish feel */
     border-bottom: 5px solid var(--main-yellow); /* Yellow bottom border */
-    bottom: 0px;    
+    bottom: 0px;
 }
 
 /* Footer Headings */
@@ -216,7 +225,33 @@ footer h6 {
 }
 
 /* Home Page */
+.hero-container {
+    height: calc(100vh - 75px);
+}
 
+.hero-text-container {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#hero-text {
+    color: var(--main-black);
+    font-family: 'PhosphateInline', sans-serif;
+    height: 50px;
+    z-index: 1000;
+}
+
+#join-button {
+    width: 300px;
+    margin-top: calc(100vh - 300px);
+}
+
+#our-mission-header::before {
+    background-color: var(--main-red);
+}
+
+#what-we-are-header::before {
+    background-color: var(--main-blue);
 
 
 /* Membership Access Page */
