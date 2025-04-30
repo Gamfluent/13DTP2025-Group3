@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Membership Access</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar">
+            <div id="navContainer" class="container justify-content-between align-items-center">
+                <a href="#" class="navbar-brand text-light align-items-center">
+                    <img class="shadow" src="../../images/logo-color.png" alt="Logo" width="50">
+                </a>
+
+                <div id="brand-text" class="fs-3 justify-content-center align-items-center">
+                    <p class="my-auto">RBOCC</p>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <!-- Desktop Portal Button -->
+                    <button type="button" onclick="window.open('https://www.wakaama.co.nz/members-area/', '_blank')" class="btn d-none d-lg-inline me-2 shadow">Portal</button>
+
+                    <!-- Desktop Contact Button (assumed it should do something) -->
+                    <button type="button" onclick="window.location.href='../Contacts/'" class="btn d-none d-lg-inline me-2 shadow">Contact</button>
+
+                    <!-- Hamburger Menu Button -->
+                    <button
+                        class="navbar-button mx-2 bg-transparent"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        onclick="this.classList.toggle('active')"
+                    >
+                        <span class="navbar-hamburger shadow rounded border d-block mb-2" id="line-1"></span>
+                        <span class="navbar-hamburger shadow rounded border d-block mb-2" id="line-2"></span>
+                        <span class="navbar-hamburger shadow rounded border d-block" id="line-3"></span>
+                    </button>
+
+                    <!-- Mobile Menu -->
+                    <div class="collapse position-absolute top-100 end-0" id="navbarToggleExternalContent">
+                        <div class="p-4" id="navbar-content">
+                            <h5><a href="../Home/" class="h4 text-decoration-none">Home page</a></h5>
+                            <h5><a href="../Membership-Access/" class="h4 text-decoration-none">Membership Access</a></h5>
+                            <h5><a href="../Membership-Details/" class="h4 text-decoration-none">Membership Details</a></h5>
+                            <h5><a href="../Safety/" class="h4 text-decoration-none">Safety</a></h5>
+                            <h5><a href="../Additional-Info/" class="h4 text-decoration-none">Additional Info</a></h5>
+                            <h5><a href="../Contacts/" class="h4 text-decoration-none">Contacts</a></h5>
+
+                            <!-- Mobile Portal Button -->
+                            <button
+                                type="button"
+                                onclick="window.open('https://www.wakaama.co.nz/members-area/', '_blank')"
+                                class="btn btn-lg d-lg-none me-2"
+                            >
+                                Portal
+                            </button>
+
+                            <!-- Mobile Contact Button -->
+                            <button
+                                type="button"
+                                onclick="window.location.href='../Contacts/'"
+                                class="btn btn-lg d-lg-none"
+                            >
+                                Contact
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container d-flex flex-column justify-content-center" id="body-access">
+        <a href="https://www.wakaama.co.nz/members-area/" target="_blank" class="btn my-3 fs-1 shadow align-self-center custom-hover" id="portal-button">Visit Club Portal</a>
+
+        <div id="card-container" class="row align-items-stretch h-100">
+            <div class="col-12 col-lg-6 d-flex flex-column">
+                <section id="existing-members-card" class="section shadow equal-half">
+                    <div id="existing-members-section" class="section-header px-4 ps-md-5 py-3">
+                        <h2>Existing Members</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            <i class="fas fa-calendar-alt me-2"></i>
+                            Fees are due on the anniversary of your club membership.
+                        </p>
+                        <p>
+                            <i class="fas fa-credit-card me-2"></i>
+                            All payments must be made through the club's online portal.
+                        </p>
+                        <p>
+                            <i class="fas fa-file-alt me-2"></i>
+                            Any required forms must be returned to the Club Treasurer.
+                        </p>
+
+                        <div class="alert alert-info d-flex align-items-center" role="alert">
+                            <i class="fas fa-hourglass-half me-2"></i>
+                            Avoid delays — renew early to stay active.
+                        </div>
+                    </div>
+                </section>
+
+                <section id="id-card" class="section shadow equal-half">
+                    <div id="id-cards-section" class="section-header flex-fill px-4 ps-md-5 py-3">
+                        <h2>ID Cards</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>
+                            <i class="fas fa-dollar-sign me-2"></i>
+                            WANZ ID cards cost $5.00 per paddler. <em>(Fees may increase around Sprint Nationals.)</em>
+                        </p>
+                        <p>
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            <strong>No ID card, no paddle.</strong> These are required for all Waka Ama regattas.
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-2"></i>
+                            Email the following to <a href="mailto:info@rbocc.co.nz">info@rbocc.co.nz</a>:
+                        </p>
+                        <ul class="mb-2">
+                            <li>
+                                <i class="fas fa-user-circle me-2"></i>Headshot photo
+                            </li>
+                            <li>
+                                <i class="fas fa-passport me-2"></i>Proof of ID (Passport preferred, or driver’s license/birth certificate)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="alert alert-warning d-flex align-items-center" role="alert">
+                        <i class="fas fa-paperclip me-2"></i>
+                        Send these items as soon as possible to avoid delays in registration.
+                    </div>
+                </section>
+            </div>
+                
+            <div class="col-12 col-lg-6">
+                <section id="responsibilities-card" class="section shadow h-100">
+                    <div id="responsibilities-section" class="section-header px-4 ps-md-5 py-3">
+                        <h2>Responsibilities</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-img-container">
+                            <img src="../../images/waka_prep.jpg" alt="">
+                        </div>
+                        
+                        <p>As a club member, you're expected to:</p>
+                        <ul class="mb-2">
+                            <li>
+                                <i class="fas fa-bullseye me-2"></i>
+                                Foster the visions, values, and objectives of the club
+                            </li>
+                            <li>
+                                <i class="fas fa-shield-alt me-2"></i>
+                                Maintain the integrity of the Club at all times
+                            </li>
+                            <li>
+                                <i class="fas fa-handshake me-2"></i>
+                                Commit to your team and be a team player
+                            </li>
+                            <li>
+                                <i class="fas fa-tools me-2"></i>
+                                Treat all club equipment with care and report damages
+                            </li>
+                            <li>
+                                <i class="fas fa-exclamation-circle me-2"></i>
+                                Abide by safety rules and regulations
+                            </li>
+                            <li>
+                                <i class="fas fa-heart me-2"></i>
+                                Treat all members with courtesy and respect
+                            </li>
+                            <li>
+                                <i class="fas fa-calendar-check me-2"></i>
+                                Participate in social hui events
+                            </li>
+                            <li>
+                                <i class="fas fa-hand-holding-usd me-2"></i>
+                                Assist in fundraising activities
+                            </li>
+                            <li>
+                                <i class="fas fa-wallet me-2"></i>
+                                Pay membership fees on time
+                            </li>
+                        </ul>
+                        <p>
+                            <i class="fas fa-globe me-2"></i>
+                            <a href="https://www.wakaama.co.nz/members-area/" target="_blank">Log into your Club Portal to pay</a>
+                        </p>
+                    </div>
+
+                    <div class="alert alert-success d-flex align-items-center" role="alert">
+                        <i class="fas fa-thumbs-up me-2"></i>
+                        Contributing to the club helps keep everything running smoothly for everyone!
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid py-3 mt-auto">
+        <div class="container">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <div></div>
+
+                <div class="text-center mb-3 mb-md-0">
+                    <h6 class="mb-1 fw-bold text-uppercase">Contact Us</h6>
+                    <div class="d-flex align-items-center justify-content-center gap-3 contact-box px-2 py-2 shadow">
+                    Our Email: Info@rbocc.co.nz
+                    </div>
+                </div>
+
+                <div></div>
+
+                <div class="text-center mb-3 mb-md-0">
+                    <h6 class="mb-1 fw-bold text-uppercase">Emergency</h6>
+                    <div class="d-flex align-items-center justify-content-center gap-3 info-box px-2 py-2 urgent-box shadow">
+                    111 if it's happening now
+                    </div>
+                </div>
+
+                <div></div>
+
+                <div class="text-center">
+                    <h6 class="mb-1 fw-bold text-uppercase">Emergency</h6>
+                    <div class="d-flex align-items-center justify-content-center gap-3 info-box px-2 py-2 past-emergency-box shadow">
+                    105 if it has already happened
+                    </div>
+                </div>
+
+                <div></div>
+            </div>
+
+            <div class="container-fluid text-center mt-3 d-flex justify-content-between">
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Maritime Rules</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Weather</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Swell Map</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Water Safety</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Auckland Tides</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Coastguard</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Constitution</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
