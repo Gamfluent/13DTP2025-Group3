@@ -11,9 +11,9 @@
 <body>
     <header>
         <nav id="navbar" class="navbar">
-            <div class="container justify-content-between align-items-center">
+            <div id="navContainer" class="container justify-content-between align-items-center">
                 <a href="#" class="navbar-brand text-light align-items-center">
-                    <img class="shadow" src="../../images/logo-color.png" alt="Logo" width="50px" height="auto">
+                    <img class="shadow" src="../../images/logo-color.png" alt="Logo" width="50">
                 </a>
 
                 <div id="brand-text" class="fs-3 justify-content-center align-items-center">
@@ -21,23 +21,67 @@
                 </div>
 
                 <div class="d-flex align-items-center">
-                    <button href="" type="button" class="btn d-none d-lg-inline me-2 shadow">Portal</button>
-                    <button href="" type="button" class="btn d-none d-lg-inline me-2 shadow">Contact</button>
-                    <button class="navbar-button mx-2 bg-transparent shadow" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="this.classList.toggle('active')">
-                        <span class="navbar-hamburger rounded border d-block mb-2" id="line-1"></span>
-                        <span class="navbar-hamburger rounded border d-block mb-2" id="line-2"></span>
-                        <span class="navbar-hamburger rounded border d-block" id="line-3"></span>
+                    <!-- Desktop Portal Button -->
+                    <button
+                        type="button"
+                        onclick="window.open('https://www.wakaama.co.nz/members-area/', '_blank')"
+                        class="btn d-none d-lg-inline me-2 shadow"
+                    >
+                        Portal
                     </button>
+
+                    <!-- Desktop Contact Button (assumed it should do something) -->
+                    <button
+                        type="button"
+                        onclick="window.location.href='../Contacts/'"
+                        class="btn d-none d-lg-inline me-2 shadow"
+                    >
+                        Contact
+                    </button>
+
+                    <!-- Hamburger Menu Button -->
+                    <button
+                        class="navbar-button mx-2 bg-transparent"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        onclick="this.classList.toggle('active')"
+                    >
+                        <span class="navbar-hamburger shadow rounded border d-block mb-2" id="line-1"></span>
+                        <span class="navbar-hamburger shadow rounded border d-block mb-2" id="line-2"></span>
+                        <span class="navbar-hamburger shadow rounded border d-block" id="line-3"></span>
+                    </button>
+
+                    <!-- Mobile Menu -->
                     <div class="collapse position-absolute top-100 end-0" id="navbarToggleExternalContent">
                         <div class="p-4" id="navbar-content">
                             <h5><a href="../Home/" class="h4 text-decoration-none">Home page</a></h5>
-                            <h5><a href="../Membership Access/" class="h4 text-decoration-none">Membership Access</a></h5>
-                            <h5><a href="../Membership Details/" class="h4 text-decoration-none">Membership Details</a></h5>
+                            <h5><a href="../Membership-Access/" class="h4 text-decoration-none">Membership Access</a></h5>
+                            <h5><a href="../Membership-Details/" class="h4 text-decoration-none">Membership Details</a></h5>
                             <h5><a href="../Safety/" class="h4 text-decoration-none">Safety</a></h5>
-                            <h5><a href="../Additional Info/" class="h4 text-decoration-none">Additional Info</a></h5>
+                            <h5><a href="../Additional-Info/" class="h4 text-decoration-none">Additional Info</a></h5>
                             <h5><a href="../Contacts/" class="h4 text-decoration-none">Contacts</a></h5>
-                            <button href="" type="button" class="btn btn-lg d-lg-none me-2">Portal</button>
-                            <button href="" type="button" class="btn btn-lg d-lg-none">Contact</button>
+
+                            <!-- Mobile Portal Button -->
+                            <button
+                                type="button"
+                                onclick="window.open('https://www.wakaama.co.nz/members-area/', '_blank')"
+                                class="btn btn-lg d-lg-none me-2"
+                            >
+                                Portal
+                            </button>
+
+                            <!-- Mobile Contact Button -->
+                            <button
+                                type="button"
+                                onclick="window.location.href='../Contacts/'"
+                                class="btn btn-lg d-lg-none"
+                            >
+                                Contact
+                            </button>
                         </div>
                     </div>
                 </div>
