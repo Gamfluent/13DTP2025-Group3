@@ -11,9 +11,9 @@
 <body>
     <header>
         <nav id="navbar" class="navbar">
-            <div class="container justify-content-between align-items-center">
+            <div id="navContainer" class="container justify-content-between align-items-center">
                 <a href="#" class="navbar-brand text-light align-items-center">
-                    <img class="shadow" src="../../images/logo-color.png" alt="Logo" width="50px" height="auto">
+                    <img class="shadow" src="../../images/logo-color.png" alt="Logo" width="50">
                 </a>
 
                 <div id="brand-text" class="fs-3 justify-content-center align-items-center">
@@ -21,30 +21,76 @@
                 </div>
 
                 <div class="d-flex align-items-center">
-                    <button href="" type="button" class="btn d-none d-lg-inline me-2 shadow">Portal</button>
-                    <button href="" type="button" class="btn d-none d-lg-inline me-2 shadow">Contact</button>
-                    <button class="navbar-button mx-2 bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="this.classList.toggle('active')">
+                    <!-- Desktop Portal Button -->
+                    <button
+                        type="button"
+                        onclick="window.open('https://www.wakaama.co.nz/members-area/', '_blank')"
+                        class="btn d-none d-lg-inline me-2 shadow"
+                    >
+                        Portal
+                    </button>
+
+                    <!-- Desktop Contact Button (assumed it should do something) -->
+                    <button
+                        type="button"
+                        class="btn d-none d-lg-inline me-2 shadow" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#quickInquiryModal"
+                    >
+                        Contact
+                    </button>
+
+                    <!-- Hamburger Menu Button -->
+                    <button
+                        class="navbar-button mx-2 bg-transparent"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        onclick="this.classList.toggle('active')"
+                    >
                         <span class="navbar-hamburger shadow rounded border d-block mb-2" id="line-1"></span>
                         <span class="navbar-hamburger shadow rounded border d-block mb-2" id="line-2"></span>
                         <span class="navbar-hamburger shadow rounded border d-block" id="line-3"></span>
                     </button>
+
+                    <!-- Mobile Menu -->
                     <div class="collapse position-absolute top-100 end-0" id="navbarToggleExternalContent">
                         <div class="p-4" id="navbar-content">
                             <h5><a href="../Home/" class="h4 text-decoration-none">Home page</a></h5>
-                            <h5><a href="../Membership Access/" class="h4 text-decoration-none">Membership Access</a></h5>
-                            <h5><a href="../Membership Details/" class="h4 text-decoration-none">Membership Details</a></h5>
+                            <h5><a href="../Membership-Access/" class="h4 text-decoration-none">Membership Access</a></h5>
+                            <h5><a href="../Membership-Details/" class="h4 text-decoration-none">Membership Details</a></h5>
                             <h5><a href="../Safety/" class="h4 text-decoration-none">Safety</a></h5>
-                            <h5><a href="../Additional Info/" class="h4 text-decoration-none">Additional Info</a></h5>
+                            <h5><a href="../Additional-Info/" class="h4 text-decoration-none">Additional Info</a></h5>
                             <h5><a href="../Contacts/" class="h4 text-decoration-none">Contacts</a></h5>
-                            <button href="" type="button" class="btn btn-lg d-lg-none me-2">Portal</button>
-                            <button href="" type="button" class="btn btn-lg d-lg-none">Contact</button>
+
+                            <!-- Mobile Portal Button -->
+                            <button
+                                type="button"
+                                onclick="window.open('https://www.wakaama.co.nz/members-area/', '_blank')"
+                                class="btn btn-lg d-lg-none me-2"
+                            >
+                                Portal
+                            </button>
+
+                            <!-- Mobile Contact Button -->
+                            <button
+                                type="button"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#quickInquiryModal"
+                                class="btn btn-lg d-lg-none"
+                            >
+                                Contact
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-
+    
     <div class="container">
         <div class="hero-container mb-5">
             <div class="hero-text-container position-absolute">
@@ -133,6 +179,60 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="quickInquiryModal" tabindex="-1" aria-labelledby="quickInquiryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quickInquiryModalLabel">Quick Club Inquiry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+    
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="inquiryName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="inquiryName" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="inquiryEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inquiryEmail" required>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="inquiryType" class="form-label">Inquiry Type</label>
+                            <select class="form-select" id="inquiryType" required>
+                                <option selected disabled>Select an option</option>
+                                <option>Membership Renewal Help</option>
+                                <option>Payment Portal Issue</option>
+                                <option>Submitting Required Forms</option>
+                                <option>ID Card Application Help</option>
+                                <option>Trouble Uploading Photo/ID</option>
+                                <option>Club Responsibilities Clarification</option>
+                                <option>Report Equipment Damage</option>
+                                <option>Volunteer for Fundraising</option>
+                                <option>Join a Social Hui Event</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="inquiryMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="inquiryMessage" rows="4" required></textarea>
+                        </div>
+                    </div>
+    
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-submit">Send Inquiry</button>
+                    </div>
+                </form>
+    
+            </div>
+        </div>
+      </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
