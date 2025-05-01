@@ -33,8 +33,9 @@
                     <!-- Desktop Contact Button (assumed it should do something) -->
                     <button
                         type="button"
-                        onclick="window.location.href='../Contacts/'"
-                        class="btn d-none d-lg-inline me-2 shadow"
+                        class="btn d-none d-lg-inline me-2 shadow" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#quickInquiryModal"
                     >
                         Contact
                     </button>
@@ -91,8 +92,120 @@
 
     <div class="container">
         <!-- Your content here -->
-    </div>
 
+        <!-- Modal -->
+         <!-- Add this to your <head> or CSS file -->
+<style>
+    :root {
+      --main-black: #232323;
+      --main-white: #F9F9F9;
+      --main-yellow: #FDC010;
+      --main-red: #E42D26;
+      --main-blue: #2FBEC2;
+    }
+  
+    .modal-content {
+      background-color: var(--main-white);
+      border: 2px solid var(--main-blue);
+      border-radius: 12px;
+    }
+  
+    .modal-header {
+      background-color: var(--main-blue);
+      color: var(--main-white);
+      border-bottom: none;
+    }
+  
+    .modal-title {
+      font-weight: bold;
+    }
+  
+    .modal-body label {
+      font-weight: 600;
+      color: var(--main-black);
+    }
+  
+    .form-control,
+    .form-select {
+      border-radius: 6px;
+      border: 1px solid var(--main-blue);
+    }
+  
+    .btn-submit {
+      background-color: var(--main-blue);
+      color: var(--main-white);
+      border: none;
+    }
+  
+    .btn-submit:hover {
+      background-color: var(--main-yellow);
+      color: var(--main-black);
+    }
+  
+    .btn-close {
+      background-color: var(--main-white);
+    }
+  </style>
+  
+  <!-- Button to open the modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quickInquiryModal">
+    Quick Inquiry
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="quickInquiryModal" tabindex="-1" aria-labelledby="quickInquiryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="quickInquiryModalLabel">Quick Club Inquiry</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <form>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="inquiryName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inquiryName" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inquiryEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inquiryEmail" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inquiryType" class="form-label">Inquiry Type</label>
+                        <select class="form-select" id="inquiryType" required>
+                            <option selected disabled>Select an option</option>
+                            <option>Membership Renewal Help</option>
+                            <option>Payment Portal Issue</option>
+                            <option>Submitting Required Forms</option>
+                            <option>ID Card Application Help</option>
+                            <option>Trouble Uploading Photo/ID</option>
+                            <option>Club Responsibilities Clarification</option>
+                            <option>Report Equipment Damage</option>
+                            <option>Volunteer for Fundraising</option>
+                            <option>Join a Social Hui Event</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="inquiryMessage" class="form-label">Message</label>
+                        <textarea class="form-control" id="inquiryMessage" rows="4" required></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-submit">Send Inquiry</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+  </div>
+    
     <footer class="container-fluid py-3 mt-auto">
         <div class="container">
             <div class="container d-flex flex-column flex-md-row justify-content-between">

@@ -98,6 +98,49 @@
   transform: scale(1.05);
 }
 
+/* Modal */
+.modal-content {
+    background-color: var(--main-white);
+    border: 2px solid var(--main-blue);
+    border-radius: 12px;
+}
+
+.modal-header {
+    background-color: var(--main-blue);
+    color: var(--main-white);
+    border-bottom: none;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+.modal-body label {
+    font-weight: 600;
+    color: var(--main-black);
+}
+
+.form-control,
+.form-select {
+    border-radius: 6px;
+    border: 1px solid var(--main-blue);
+}
+
+.btn-submit {
+    background-color: var(--main-blue);
+    color: var(--main-white);
+    border: none;
+}
+
+.btn-submit:hover {
+    background-color: var(--main-yellow);
+    color: var(--main-black);
+}
+
+.btn-close {
+    background-color: var(--main-white);
+}
+
 /* Navigation */
 .navbar-button {
     border-style: none;
