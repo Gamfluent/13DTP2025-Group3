@@ -78,7 +78,8 @@
                             <!-- Mobile Contact Button -->
                             <button
                                 type="button"
-                                onclick="window.location.href='../Contacts/'"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#quickInquiryModal"
                                 class="btn btn-lg d-lg-none"
                             >
                                 Contact
@@ -92,65 +93,6 @@
 
     <div class="container">
         <!-- Your content here -->
-
-        <!-- Modal -->
-         <!-- Add this to your <head> or CSS file -->
-<style>
-    :root {
-      --main-black: #232323;
-      --main-white: #F9F9F9;
-      --main-yellow: #FDC010;
-      --main-red: #E42D26;
-      --main-blue: #2FBEC2;
-    }
-  
-    .modal-content {
-      background-color: var(--main-white);
-      border: 2px solid var(--main-blue);
-      border-radius: 12px;
-    }
-  
-    .modal-header {
-      background-color: var(--main-blue);
-      color: var(--main-white);
-      border-bottom: none;
-    }
-  
-    .modal-title {
-      font-weight: bold;
-    }
-  
-    .modal-body label {
-      font-weight: 600;
-      color: var(--main-black);
-    }
-  
-    .form-control,
-    .form-select {
-      border-radius: 6px;
-      border: 1px solid var(--main-blue);
-    }
-  
-    .btn-submit {
-      background-color: var(--main-blue);
-      color: var(--main-white);
-      border: none;
-    }
-  
-    .btn-submit:hover {
-      background-color: var(--main-yellow);
-      color: var(--main-black);
-    }
-  
-    .btn-close {
-      background-color: var(--main-white);
-    }
-  </style>
-  
-  <!-- Button to open the modal -->
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quickInquiryModal">
-    Quick Inquiry
-  </button>
   
   <!-- Modal -->
   <div class="modal fade" id="quickInquiryModal" tabindex="-1" aria-labelledby="quickInquiryModalLabel" aria-hidden="true">
