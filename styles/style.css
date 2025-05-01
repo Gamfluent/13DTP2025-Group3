@@ -420,16 +420,33 @@ footer h6 {
     background-color: var(--main-red);
 }
 
+#safety-guidelines-card {
+    border: solid 2px var(--main-red) !important;
+    margin-top: 1rem;
+}
+
 #on-the-water-header::before {
     background-color: var(--main-blue);
+}
+
+#on-the-water-card {
+    border: solid 2px var(--main-blue) !important;
 }
 
 #capsize-drill-header::before {
     background-color: var(--main-yellow);
 }
 
+#capsize-drill-card {
+    border: solid 2px var(--main-yellow) !important;
+}
+
 #recommended-clothing-header::before {
     background-color: var(--main-red);
+}
+
+#recommended-clothing-card {
+    border: solid 2px var(--main-red) !important;
 }
 
 
