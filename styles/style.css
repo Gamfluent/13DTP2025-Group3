@@ -434,6 +434,10 @@ footer h6 {
     border: solid 2px var(--main-blue) !important;
 }
 
+#info-title::before {
+    background-color: var(--main-red);
+}
+
 /* Safety Page */
 
 #committee-card {
