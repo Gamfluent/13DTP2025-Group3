@@ -409,6 +409,14 @@ footer h6 {
     background-color: var(--main-blue);
 }
 
+#committee-section::before {
+    background-color: var(--main-red);
+}
+
+#contact-information-section::before {
+    background-color: var(--main-blue);
+}
+
 #contact-information-section::after {
     background-color: var(--main-blue);
 }
