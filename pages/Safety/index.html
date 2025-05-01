@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Template</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="navbar">
+            <div id="navContainer" class="container justify-content-between align-items-center">
+                <a href="#" class="navbar-brand text-light align-items-center">
+                    <img class="shadow" src="../../images/logo-color.png" alt="Logo" width="50">
+                </a>
+
+                <div id="brand-text" class="fs-3 justify-content-center align-items-center">
+                    <p class="my-auto">RBOCC</p>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <!-- Desktop Portal Button -->
+                    <button
+                        type="button"
+                        onclick="window.open('https://www.wakaama.co.nz/members-area/', '_blank')"
+                        class="btn d-none d-lg-inline me-2 shadow"
+                    >
+                        Portal
+                    </button>
+
+                    <!-- Desktop Contact Button (assumed it should do something) -->
+                    <button
+                        type="button"
+                        class="btn d-none d-lg-inline me-2 shadow" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#quickInquiryModal"
+                    >
+                        Contact
+                    </button>
+
+                    <!-- Hamburger Menu Button -->
+                    <button
+                        class="navbar-button mx-2 bg-transparent"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        onclick="this.classList.toggle('active')"
+                    >
+                        <span class="navbar-hamburger shadow rounded border d-block mb-2" id="line-1"></span>
+                        <span class="navbar-hamburger shadow rounded border d-block mb-2" id="line-2"></span>
+                        <span class="navbar-hamburger shadow rounded border d-block" id="line-3"></span>
+                    </button>
+
+                    <!-- Mobile Menu -->
+                    <div class="collapse position-absolute top-100 end-0" id="navbarToggleExternalContent">
+                        <div class="p-4" id="navbar-content">
+                            <h5><a href="../Home/" class="h4 text-decoration-none">Home page</a></h5>
+                            <h5><a href="../Membership-Access/" class="h4 text-decoration-none">Membership Access</a></h5>
+                            <h5><a href="../Membership-Details/" class="h4 text-decoration-none">Membership Details</a></h5>
+                            <h5><a href="../Safety/" class="h4 text-decoration-none">Safety</a></h5>
+                            <h5><a href="../Additional-Info/" class="h4 text-decoration-none">Additional Info</a></h5>
+                            <h5><a href="../Contacts/" class="h4 text-decoration-none">Contacts</a></h5>
+
+                            <!-- Mobile Portal Button -->
+                            <button
+                                type="button"
+                                onclick="window.open('https://www.wakaama.co.nz/members-area/', '_blank')"
+                                class="btn btn-lg d-lg-none me-2"
+                            >
+                                Portal
+                            </button>
+
+                            <!-- Mobile Contact Button -->
+                            <button
+                                type="button"
+                                data-bs-toggle="modal" 
+                                data-bs-target="#quickInquiryModal"
+                                class="btn btn-lg d-lg-none"
+                            >
+                                Contact
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="section shadow">
+            <div id="safety-guidelines-header" class="section-header">
+                <h2 class="fs-1">Safety Guidelines</h2>
+            </div>
+            <div class="section-content">
+                <p>
+                    Red Beach Outrigger Canoe Club endorses the safe practice of wakaama/outrigger canoe paddling, both on and off water. Minimum requirements for participation include a swimming proficiency test over 100m in open water and treading water for five minutes and for the participant to be in good health and of at least a moderate level of fitness.
+                    <br><br>
+                    Any pre-existing medical conditions should be notified to the coach and/or club in the interests of your own well being. This should not be treated lightly, people die in Waka Ama every season, build your fitness level over time and if in need ask for help.
+                </p>
+            </div>
+            <div id="on-the-water-header" class="section-header">
+                <h2 class="fs-1">On the water</h2>
+            </div>
+            <div class="section-content">
+                <ul>
+                    <li>Make sure you are well hydrated. Have a water bottle or hydration system for both training and regattas.</li>
+                    <li>Use sun protection, caps and sunscreen.</li>
+                    <li>Before you get in the canoe check the rigging and make sure it has 2 bailers (this is everybody's responsibility).</li>
+                    <li>The steerer is in control of the canoe. Listen and respond to their directions.</li>
+                    <li>Respect the ocean, consider the conditions, know your limits.</li>
+                    <li>Make sure your canoe (and all in it) are ready and able to handle the conditions.</li>
+                    <li>Everyone must know what to do in the event of a huli / capsize.</li>
+                    <li>If you will be paddling in the dark make sure the canoe has a navigation light.</li>
+                </ul>
+            </div>
+            <div id="capsize-drill-header" class="section-header">
+                <h2 class="fs-1">Capsize Drill</h2>
+            </div>
+            <div class="section-content">
+                <p>
+                    Outrigger canoes can and will capsize. This is called a “huli” and all new members will be introduced to the rules and hopefully complete a drill before experiencing a real huli.
+                    <br><br>
+                    In the event of the boat tipping, do not try to jump, just sit and roll with the canoe. Once upside down, push your legs against the bottom of the canoe and your body will go down away from the canoe and surface close to it.
+                    <br><br>
+                    The first thing we do is check that our “buddy” is also safe. Buddies are:
+                </p>
+                <ul>
+                    <li>Seat 1 and 2</li>
+                    <li>Seat 3 and 4</li>
+                    <li>Seat 5 and the steerer</li>
+                </ul>
+                <p>
+                    If your buddy has not surfaced, please investigate. Paddles are passed down to seat 1 and the steerer for protection.
+                    <br><br>
+                    Next, we take positions for the righting of the canoe:
+                </p>
+                <ul>
+                    <li>Seat 1 and the steerer control the position of the canoe based on wind and waves, as ordered by the steerer.</li>
+                    <li>Seat 3 and 4 position themselves next to the kiato overhangs, ready to jump on them.</li>
+                    <li>Seats 2 and 5 are below the ama, ready to push it upwards.</li>
+                </ul>
+                <p></p>
+                    On the steerer's command, the ama is raised, and the kiato is pushed down, and hopefully, the canoe is righted. Be careful of your heads at all times and don't let the ama “bang” onto the water as it can split. Once righted, two paddlers jump in and start bailing. As the water level falls, more people can hop in and paddle on the steerer's request.
+                </p>
+            </div>
+            <div id="recommended-clothing-header" class="section-header">
+                <h2 class="fs-1">Recommended Clothing</h2>
+            </div>
+            <div class="section-content">
+                <p>
+                    During winter we recommend full cover of body excluding hands (fingerless gloves) and face for practical reasons. Members generally wear padded or neoprene shorts over long tights,and long sleeve tops. Aquashoes are also recommended during cold conditions.
+                    <br><br>
+                    During the summer season members can wear any sport appropriate clothing but we recommend protecting against UV either by wearing UV clothing or using sunscreen. Water is needed for all sessions and water packs for long distance trainings or bottles. All personal items taken in boat could be lost in a capsize so don’t bring something you can’t afford
+                    to lose.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="quickInquiryModal" tabindex="-1" aria-labelledby="quickInquiryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quickInquiryModalLabel">Quick Club Inquiry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <form>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="inquiryName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="inquiryName" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inquiryEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inquiryEmail" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inquiryType" class="form-label">Inquiry Type</label>
+                            <select class="form-select" id="inquiryType" required>
+                                <option selected disabled>Select an option</option>
+                                <option>Membership Renewal Help</option>
+                                <option>Payment Portal Issue</option>
+                                <option>Submitting Required Forms</option>
+                                <option>ID Card Application Help</option>
+                                <option>Trouble Uploading Photo/ID</option>
+                                <option>Club Responsibilities Clarification</option>
+                                <option>Report Equipment Damage</option>
+                                <option>Volunteer for Fundraising</option>
+                                <option>Join a Social Hui Event</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="inquiryMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="inquiryMessage" rows="4" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-submit">Send Inquiry</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+    <footer class="container-fluid py-3 mt-auto">
+        <div class="container">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <div></div>
+
+                <div class="text-center mb-3 mb-md-0">
+                    <h6 class="mb-1 fw-bold text-uppercase">Contact Us</h6>
+                    <div class="d-flex align-items-center justify-content-center gap-3 contact-box px-2 py-2 shadow">
+                    Our Email: Info@rbocc.co.nz
+                    </div>
+                </div>
+
+                <div></div>
+
+                <div class="text-center mb-3 mb-md-0">
+                    <h6 class="mb-1 fw-bold text-uppercase">Emergency</h6>
+                    <div class="d-flex align-items-center justify-content-center gap-3 info-box px-2 py-2 urgent-box shadow">
+                    111 if it's happening now
+                    </div>
+                </div>
+
+                <div></div>
+
+                <div class="text-center">
+                    <h6 class="mb-1 fw-bold text-uppercase">Emergency</h6>
+                    <div class="d-flex align-items-center justify-content-center gap-3 info-box px-2 py-2 past-emergency-box shadow">
+                    105 if it has already happened
+                    </div>
+                </div>
+
+                <div></div>
+            </div>
+
+            <div class="container-fluid text-center mt-3 d-flex justify-content-between">
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Maritime Rules</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Weather</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Swell Map</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Water Safety</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Auckland Tides</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Coastguard</a>
+            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Constitution</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -416,6 +416,23 @@ footer h6 {
 }
 
 /* Safety Page */
+#safety-guidelines-header::before {
+    background-color: var(--main-red);
+}
+
+#on-the-water-header::before {
+    background-color: var(--main-blue);
+}
+
+#capsize-drill-header::before {
+    background-color: var(--main-yellow);
+}
+
+#recommended-clothing-header::before {
+    background-color: var(--main-red);
+}
+
+
 
 #committee-card {
     border: solid 2px var(--main-red) !important;
