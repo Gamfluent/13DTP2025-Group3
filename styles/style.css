@@ -298,7 +298,16 @@ footer h6 {
     background-color: var(--main-blue);
 }
 
-
+.image-gallery {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+.image-gallery img {
+    padding: 10px;
+    height: 500px;
+  }
 
 /* Membership Access Page */
 #portal-button {
