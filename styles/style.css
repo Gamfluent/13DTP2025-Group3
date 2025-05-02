@@ -334,6 +334,11 @@ footer h6 {
     background-color: var(--main-red) !important;
 }
 
+.section-content {
+    border-radius: 8px;
+    border: 2px solid #232323;
+}
+
 
 /* Safety Page */
 
@@ -452,5 +457,12 @@ footer h6 {
 @media (min-width: 992px) {
     #brand-text {
         margin-left: 175px;
+    }
+    #info-title::before {
+        display: block; 
+        content: "";
+        background-color: var(--main-red) !important;
+        height: 65px !important;
+        width: 95px !important;
     }
 }
