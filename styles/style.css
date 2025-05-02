@@ -385,21 +385,32 @@ footer h6 {
 /* Additional Info */
 
 .nav-link {
-    color: var(--main-white) !important; 
+    color: var(--main-white) !important;
 }
-
+    
 .small {
     font-size: 0.85rem !important; /* Slightly smaller font size */
 }
-
+    
 .nav-link {
     transition: background-color 0.9s ease, color 0.9s ease; /* Smooth transition */
 }
-
+    
 .nav-link:hover {
-    background-color: var(--main-white); 
-    color: var(--main-black) !important; 
+    background-color: var(--main-white);
+    color: var(--main-black) !important;
 }
+    
+#info-title::before {
+    background-color: var(--main-red) !important;
+}
+    
+.black-border {
+    border-radius: 8px;
+    border: 2px solid #232323;
+}
+
+/* Contact Page */
 
 #social-section::before {
     background-color: var(--main-yellow);
@@ -436,6 +447,11 @@ footer h6 {
 
 #info-title::before {
     background-color: var(--main-red);
+}
+
+.black-border {
+    border-radius: 8px;
+    border: 2px solid #232323;
 }
 
 /* Safety Page */
