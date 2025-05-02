@@ -10,9 +10,11 @@
     <title>Contacts</title>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <nav id="navbar" class="navbar">
             <div id="navContainer" class="container justify-content-between align-items-center">
+                <!-- Logo and Brand Name -->
                 <a href="#" class="navbar-brand text-light align-items-center">
                     <img class="shadow" src="../../images/logo-color.png" alt="Logo" width="50">
                 </a>
@@ -31,7 +33,7 @@
                         Portal
                     </button>
 
-                    <!-- Desktop Contact Button (assumed it should do something) -->
+                    <!-- Desktop Contact Button -->
                     <button
                         type="button"
                         class="btn d-none d-lg-inline me-2 shadow" 
@@ -60,6 +62,7 @@
                     <!-- Mobile Menu -->
                     <div class="collapse position-absolute top-100 end-0" id="navbarToggleExternalContent">
                         <div class="p-4" id="navbar-content">
+                            <!-- Navigation Links -->
                             <h5><a href="../Home/" class="h4 text-decoration-none">Home page</a></h5>
                             <h5><a href="../Membership-Access/" class="h4 text-decoration-none">Membership Access</a></h5>
                             <h5><a href="../Membership-Details/" class="h4 text-decoration-none">Membership Details</a></h5>
@@ -92,7 +95,9 @@
         </nav>
     </header>
 
+    <!-- Main Content Section -->
     <div class="container">
+        <!-- Contact Form Section -->
         <div class="row mb-3 mt-3">
             <div class="col-12">
                 <section class="section shadow" id="contact-form-card">
@@ -101,34 +106,41 @@
                     </div>
                     <div class="section-content px-4 ps-md-5 py-2">
                         <form enctype="text/plain">
+                            <!-- First Name Input -->
                             <div class="mb-3">
                                 <label for="first-name" class="form-label">First Name</label>
                                 <input type="text" id="first-name" name="First Name" class="form-control rounded-3 focus-style" placeholder="Enter your first name" required>
                             </div>
 
-                                <div class="mb-3">
-                                    <label for="last-name" class="form-label">Last Name</label>
-                                    <input type="text" id="last-name" name="Last Name" class="form-control rounded-3 focus-style" placeholder="Enter your last name" required>
-                                </div>
+                            <!-- Last Name Input -->
+                            <div class="mb-3">
+                                <label for="last-name" class="form-label">Last Name</label>
+                                <input type="text" id="last-name" name="Last Name" class="form-control rounded-3 focus-style" placeholder="Enter your last name" required>
+                            </div>
 
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email Address</label>
-                                    <input type="email" id="email" name="Email" class="form-control rounded-3 focus-style" placeholder="Enter your email" required>
-                                </div>
+                            <!-- Email Input -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="Email" class="form-control rounded-3 focus-style" placeholder="Enter your email" required>
+                            </div>
 
-                                <div class="mb-4">
-                                    <label for="message" class="form-label">Comment Message</label>
-                                    <textarea id="message" name="Message" rows="5" class="form-control rounded-3 focus-style" placeholder="Write your message here..." required></textarea>
-                                </div>
+                            <!-- Message Input -->
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Comment Message</label>
+                                <textarea id="message" name="Message" rows="5" class="form-control rounded-3 focus-style" placeholder="Write your message here..." required></textarea>
+                            </div>
 
-                                <button type="submit" class="btn shadow px-4 py-2">Send</button>
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn shadow px-4 py-2">Send</button>
                         </form>
                     </div>
                 </section>
             </div>
         </div>
 
+        <!-- Additional Information Cards -->
         <div class="row align-items-stretch gx-4" id="card-container">
+            <!-- Contact Information Card -->
             <div class="col-lg-4 mb-4">
                 <section id="contact-information-card" class="section shadow h-100">
                     <div id="contact-information-section" class="section-header px-4 ps-md-5 py-3">
@@ -153,6 +165,7 @@
                 </section>
             </div>
 
+            <!-- Committee Information Card -->
             <div class="col-lg-4 mb-4">
                 <section id="committee-card" class="section shadow h-100">
                     <div id="committee-section" class="section-header px-4 ps-md-5 py-3">
@@ -163,22 +176,23 @@
                             <strong>President:</strong> Shahram Saboori<br>
                             <a href="mailto:president@rbocc.co.nz">president@rbocc.co.nz</a><br><br>
 
-                                <strong>Secretary:</strong> Casey Smith<br>
-                                <a href="mailto:info@rbocc.co.nz">info@rbocc.co.nz</a><br><br>
+                            <strong>Secretary:</strong> Casey Smith<br>
+                            <a href="mailto:info@rbocc.co.nz">info@rbocc.co.nz</a><br><br>
 
-                                <strong>Treasurer:</strong> Charlotte Blanchard<br>
-                                <a href="mailto:treasurer@rbocc.co.nz">treasurer@rbocc.co.nz</a><br><br>
+                            <strong>Treasurer:</strong> Charlotte Blanchard<br>
+                            <a href="mailto:treasurer@rbocc.co.nz">treasurer@rbocc.co.nz</a><br><br>
 
-                                <strong>Committee Members:</strong><br>
-                                Riley Duff<br>
-                                Gary Conaghan
+                            <strong>Committee Members:</strong><br>
+                            Riley Duff<br>
+                            Gary Conaghan
                         </p>
                     </div>
                 </section>
             </div>
 
+            <!-- Social Media Links Card -->
             <div class="col-lg-4 mb-4">
-                <section id="social-card" class="section shadow h-100" >
+                <section id="social-card" class="section shadow h-100">
                     <div id="social-section" class="section-header px-4 ps-md-5 py-3">
                         <h2>Social</h2>
                     </div>
@@ -204,107 +218,108 @@
         </div>
     </div>
 
-    <!-- Modal -->
-  <div class="modal fade" id="quickInquiryModal" tabindex="-1" aria-labelledby="quickInquiryModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
+    <!-- Modal Section -->
+    <div class="modal fade" id="quickInquiryModal" tabindex="-1" aria-labelledby="quickInquiryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quickInquiryModalLabel">Quick Club Inquiry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
 
-            <div class="modal-header">
-                <h5 class="modal-title" id="quickInquiryModalLabel">Quick Club Inquiry</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- Modal Form -->
+                <form>
+                    <div class="modal-body">
+                        <!-- Name Input -->
+                        <div class="mb-3">
+                            <label for="inquiryName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="inquiryName" required>
+                        </div>
+
+                        <!-- Email Input -->
+                        <div class="mb-3">
+                            <label for="inquiryEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inquiryEmail" required>
+                        </div>
+
+                        <!-- Inquiry Type Dropdown -->
+                        <div class="mb-3">
+                            <label for="inquiryType" class="form-label">Inquiry Type</label>
+                            <select class="form-select" id="inquiryType" required>
+                                <option selected disabled>Select an option</option>
+                                <option>Membership Renewal Help</option>
+                                <option>Payment Portal Issue</option>
+                                <option>Submitting Required Forms</option>
+                                <option>ID Card Application Help</option>
+                                <option>Trouble Uploading Photo/ID</option>
+                                <option>Club Responsibilities Clarification</option>
+                                <option>Report Equipment Damage</option>
+                                <option>Volunteer for Fundraising</option>
+                                <option>Join a Social Hui Event</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Message Input -->
+                        <div class="mb-3">
+                            <label for="inquiryMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="inquiryMessage" rows="4" required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-submit">Send Inquiry</button>
+                    </div>
+                </form>
             </div>
-
-            <form>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="inquiryName" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="inquiryName" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="inquiryEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inquiryEmail" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="inquiryType" class="form-label">Inquiry Type</label>
-                        <select class="form-select" id="inquiryType" required>
-                            <option selected disabled>Select an option</option>
-                            <option>Membership Renewal Help</option>
-                            <option>Payment Portal Issue</option>
-                            <option>Submitting Required Forms</option>
-                            <option>ID Card Application Help</option>
-                            <option>Trouble Uploading Photo/ID</option>
-                            <option>Club Responsibilities Clarification</option>
-                            <option>Report Equipment Damage</option>
-                            <option>Volunteer for Fundraising</option>
-                            <option>Join a Social Hui Event</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="inquiryMessage" class="form-label">Message</label>
-                        <textarea class="form-control" id="inquiryMessage" rows="4" required></textarea>
-                    </div>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-submit">Send Inquiry</button>
-                </div>
-            </form>
-
         </div>
     </div>
-  </div>
 
+    <!-- Footer Section -->
     <footer class="container-fluid py-3 mt-auto">
         <div class="container">
             <div class="container d-flex flex-column flex-md-row justify-content-between">
-                <div></div>
-
+                <!-- Contact Us Section -->
                 <div class="text-center mb-3 mb-md-0">
                     <h6 class="mb-1 fw-bold text-uppercase">Contact Us</h6>
                     <div class="d-flex align-items-center justify-content-center gap-3 contact-box px-2 py-2 shadow">
-                    Our Email: Info@rbocc.co.nz
+                        Our Email: Info@rbocc.co.nz
                     </div>
                 </div>
 
-                <div></div>
-
+                <!-- Emergency Section -->
                 <div class="text-center mb-3 mb-md-0">
                     <h6 class="mb-1 fw-bold text-uppercase">Emergency</h6>
                     <div class="d-flex align-items-center justify-content-center gap-3 info-box px-2 py-2 urgent-box shadow">
-                    111 if it's happening now
+                        111 if it's happening now
                     </div>
                 </div>
-
-                <div></div>
 
                 <div class="text-center">
                     <h6 class="mb-1 fw-bold text-uppercase">Emergency</h6>
                     <div class="d-flex align-items-center justify-content-center gap-3 info-box px-2 py-2 past-emergency-box shadow">
-                    105 if it has already happened
+                        105 if it has already happened
                     </div>
                 </div>
-
-                <div></div>
             </div>
 
+            <!-- Footer Links -->
             <div class="container-fluid text-center mt-3 d-flex justify-content-between">
-            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Maritime Rules</a>
-            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
-            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Weather</a>
-            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
-            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Swell Map</a>
-            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
-            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Water Safety</a>
-            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
-            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Auckland Tides</a>
-            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
-            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Coastguard</a>
-            <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
-            <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Constitution</a>
+                <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Maritime Rules</a>
+                <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+                <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Weather</a>
+                <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+                <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Swell Map</a>
+                <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+                <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Water Safety</a>
+                <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+                <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Auckland Tides</a>
+                <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+                <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Coastguard</a>
+                <span class="footer-link fw-bold text-decoration-none d-none d-lg-inline">|</span>
+                <a href="#" class="footer-link fw-bold text-decoration-none d-none d-lg-inline">Constitution</a>
             </div>
         </div>
     </footer>
